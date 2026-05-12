@@ -7991,11 +7991,11 @@
         ],
         "params": [],
         "type": "scheme",
-        "status": "unknown",
-        "lastVerified": null,
+        "status": "verified",
+        "lastVerified": "2026-05-12",
         "iosVersion": null,
         "appVersion": null,
-        "notes": "已验证"
+        "notes": "User reported this scheme as usable."
       }
     ]
   }
