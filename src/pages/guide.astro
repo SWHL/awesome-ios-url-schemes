@@ -2,10 +2,7 @@
 import '../styles/global.css';
 
 const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
-const newSchemeBody = `请补充下面信息，提交后会自动生成一个待审核 PR。\n\nApp 名称：\nBundle ID：\nURL Scheme：\n用途：\n分类：\n验证状态：unknown\n来源/测试说明：\n\n<!-- scheme-submission\n{\n  "type": "scheme-submission",\n  "app": "",\n  "bundleId": "",\n  "url": "",\n  "action": "",\n  "category": "",\n  "status": "unknown",\n  "source": ""\n}\n-->`;
-const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Add scheme: ')}&labels=${encodeURIComponent(
-  'scheme,new-scheme',
-)}&body=${encodeURIComponent(newSchemeBody)}`;
+const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
 ---
 
 <!doctype html>
@@ -22,7 +19,7 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Ad
       document.documentElement.dataset.themePreference = storedTheme;
     </script>
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <a class="brand" href="../" aria-label="awesome-ios-url-schemes">
         <span class="brand-mark">⌘</span>
@@ -94,6 +91,7 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Ad
         </div>
       </section>
     </main>
+    <a class="back-top" href="#top" aria-label="返回顶部" title="返回顶部">↑</a>
     <script>
       const themeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.theme-option'));
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');

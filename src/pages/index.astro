@@ -21,10 +21,7 @@ const statusNames: Record<string, string> = {
   deprecated: '可能失效',
   unknown: '未验证',
 };
-const newSchemeBody = `请补充下面信息，提交后会自动生成一个待审核 PR。\n\nApp 名称：\nBundle ID：\nURL Scheme：\n用途：\n分类：\n验证状态：unknown\n来源/测试说明：\n\n<!-- scheme-submission\n{\n  "type": "scheme-submission",\n  "app": "",\n  "bundleId": "",\n  "url": "",\n  "action": "",\n  "category": "",\n  "status": "unknown",\n  "source": ""\n}\n-->`;
-const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Add scheme: ')}&labels=${encodeURIComponent(
-  'scheme,new-scheme',
-)}&body=${encodeURIComponent(newSchemeBody)}`;
+const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
 
 const schemeEntries = schemes.flatMap((app) =>
   app.schemes.map((scheme) => {
@@ -93,7 +90,7 @@ function getStatusSummary(entries: typeof schemeEntries) {
       document.documentElement.dataset.themePreference = storedTheme;
     </script>
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <a class="brand" href="./" aria-label="awesome-ios-url-schemes">
         <span class="brand-mark">⌘</span>
@@ -295,6 +292,7 @@ function getStatusSummary(entries: typeof schemeEntries) {
     </main>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <a class="back-top" href="#top" aria-label="返回顶部" title="返回顶部">↑</a>
 
     <script>
       const searchInput = document.querySelector<HTMLInputElement>('#search-input');
@@ -447,10 +445,25 @@ function getStatusSummary(entries: typeof schemeEntries) {
         return copied;
       }
 
+      function focusSearch() {
+        if (!searchInput) return;
+
+        searchInput.focus({ preventScroll: true });
+        searchInput.select();
+        searchInput.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+
       searchInput?.addEventListener('input', filterCards);
       categoryFilter?.addEventListener('change', filterCards);
       capabilityFilter?.addEventListener('change', filterCards);
       statusFilter?.addEventListener('change', filterCards);
+      document.addEventListener('keydown', (event) => {
+        const usesFindShortcut = event.key.toLowerCase() === 'f' && (event.metaKey || event.ctrlKey);
+        if (!usesFindShortcut || event.altKey || event.shiftKey) return;
+
+        event.preventDefault();
+        focusSearch();
+      });
       viewButtons.forEach((button) => {
         button.addEventListener('click', () => setView(button.dataset.viewTarget || 'app'));
       });

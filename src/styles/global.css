@@ -912,6 +912,30 @@ code {
   transform: translate(-50%, 0);
 }
 
+.back-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 25;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 750;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.back-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 @media (max-width: 760px) {
   .site-header {
     align-items: flex-start;
@@ -972,6 +996,11 @@ code {
   .panel-actions {
     align-items: stretch;
     justify-content: space-between;
+  }
+
+  .back-top {
+    right: 14px;
+    bottom: 18px;
   }
 
   .controls {
