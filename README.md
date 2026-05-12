@@ -38,6 +38,10 @@ The data validator can also be run directly:
 python scripts/validate_data.py
 ```
 
+## Bundle ID lookup
+
+The homepage includes a static Bundle ID lookup tool that works on GitHub Pages. It uses the App Store share URL in the browser and does not require a backend service.
+
 ## Data
 
 Scheme records live in `src/data/schemes.json`. Apps are grouped at the top level, and each scheme carries structured metadata:

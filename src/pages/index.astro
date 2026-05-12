@@ -99,6 +99,7 @@ function getStatusSummary(entries: typeof schemeEntries) {
       <div class="header-actions">
         <nav class="site-nav" aria-label="Primary">
           <a href="./guide/">教程</a>
+          <a href="#bundle-id-lookup">Bundle ID</a>
           <a href="#schemes">索引</a>
           <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
           <a href={repositoryUrl} rel="noreferrer">GitHub</a>
@@ -126,6 +127,55 @@ function getStatusSummary(entries: typeof schemeEntries) {
             <strong>{totalSchemes}</strong>
             <span>Schemes</span>
           </div>
+        </div>
+      </section>
+
+      <section class="lookup-panel" id="bundle-id-lookup" aria-labelledby="bundle-id-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Lookup</p>
+            <h2 id="bundle-id-title">Bundle ID 查询</h2>
+          </div>
+        </div>
+        <form class="bundle-lookup-form" id="bundle-lookup-form">
+          <label class="lookup-field">
+            <span class="sr-only">App Store 分享 URL</span>
+            <input
+              id="app-store-url-input"
+              type="url"
+              inputmode="url"
+              placeholder="粘贴 App Store 分享 URL"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <button class="primary-action lookup-submit" type="submit">查询</button>
+        </form>
+        <p class="lookup-message" id="bundle-lookup-message" role="status" aria-live="polite"></p>
+        <a class="lookup-fallback" id="bundle-lookup-fallback" href="#" target="_blank" rel="noreferrer" hidden>
+          打开 Apple Lookup API
+        </a>
+        <div class="lookup-result" id="bundle-lookup-result" hidden>
+          <div>
+            <span>App</span>
+            <strong id="bundle-result-app"></strong>
+          </div>
+          <div>
+            <span>Bundle ID</span>
+            <code id="bundle-result-id"></code>
+          </div>
+          <button
+            class="icon-action copy-button"
+            id="bundle-result-copy"
+            type="button"
+            data-copy=""
+            data-tooltip="复制 Bundle ID"
+            aria-label="复制 Bundle ID"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-1v1a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h1V7Zm3-1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-6Zm-4 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1h-3a3 3 0 0 1-3-3v-3H7Z"></path>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -306,10 +356,111 @@ function getStatusSummary(entries: typeof schemeEntries) {
       const resultCount = document.querySelector<HTMLOutputElement>('#result-count');
       const emptyState = document.querySelector<HTMLElement>('#empty-state');
       const toast = document.querySelector<HTMLElement>('#toast');
+      const bundleLookupForm = document.querySelector<HTMLFormElement>('#bundle-lookup-form');
+      const appStoreUrlInput = document.querySelector<HTMLInputElement>('#app-store-url-input');
+      const bundleLookupMessage = document.querySelector<HTMLElement>('#bundle-lookup-message');
+      const bundleLookupResult = document.querySelector<HTMLElement>('#bundle-lookup-result');
+      const bundleResultApp = document.querySelector<HTMLElement>('#bundle-result-app');
+      const bundleResultId = document.querySelector<HTMLElement>('#bundle-result-id');
+      const bundleResultCopy = document.querySelector<HTMLButtonElement>('#bundle-result-copy');
+      const bundleLookupSubmit = document.querySelector<HTMLButtonElement>('.lookup-submit');
+      const bundleLookupFallback = document.querySelector<HTMLAnchorElement>('#bundle-lookup-fallback');
       let toastTimer: number | undefined;
 
       function normalize(value: unknown) {
         return String(value || '').trim().toLowerCase();
+      }
+
+      function setLookupMessage(message: string, tone = '') {
+        if (!bundleLookupMessage) return;
+
+        bundleLookupMessage.textContent = message;
+        bundleLookupMessage.dataset.tone = tone;
+      }
+
+      function parseAppStoreUrl(value: string) {
+        let parsed: URL;
+        try {
+          parsed = new URL(value.trim());
+        } catch {
+          throw new Error('请输入完整的 App Store 分享 URL');
+        }
+
+        const queryId = parsed.searchParams.get('id');
+        const pathId = parsed.pathname.match(/(?:^|\/)id(\d+)(?:[/?#]|$)/)?.[1];
+        const appId = queryId || pathId;
+        if (!appId || !/^\d+$/.test(appId)) {
+          throw new Error('没有在 URL 中找到 App Store ID');
+        }
+
+        const country = parsed.pathname.split('/').filter(Boolean)[0] || '';
+        return {
+          appId,
+          country: /^[a-z]{2}$/i.test(country) ? country.toLowerCase() : '',
+        };
+      }
+
+      function buildLookupUrl(appId: string, country: string) {
+        const params = new URLSearchParams({ id: appId });
+        if (country) params.set('country', country);
+        return `https://itunes.apple.com/lookup?${params.toString()}`;
+      }
+
+      function lookupBundleIdFrom(url: string) {
+        return new Promise<Record<string, any>>((resolve, reject) => {
+          const callbackName = `bundleLookup${Date.now()}${Math.random().toString(16).slice(2)}`;
+          const script = document.createElement('script');
+
+          const cleanup = () => {
+            window.clearTimeout(timeout);
+            script.remove();
+            delete (window as any)[callbackName];
+          };
+
+          const timeout = window.setTimeout(() => {
+            cleanup();
+            reject(new Error('timeout'));
+          }, 18000);
+
+          (window as any)[callbackName] = (payload: { results?: Record<string, any>[] }) => {
+            cleanup();
+            const app = payload.results?.[0];
+            if (!app?.bundleId) {
+              reject(new Error('not-found'));
+              return;
+            }
+            resolve(app);
+          };
+
+          script.onerror = () => {
+            cleanup();
+            reject(new Error('network'));
+          };
+          script.src = `${url}${url.includes('?') ? '&' : '?'}callback=${encodeURIComponent(callbackName)}`;
+          document.head.appendChild(script);
+        });
+      }
+
+      async function lookupBundleId(appId: string, country: string) {
+        const urls = [
+          buildLookupUrl(appId, country),
+          country ? `https://itunes.apple.com/${country}/lookup?${new URLSearchParams({ id: appId }).toString()}` : '',
+          `https://itunes.apple.com/lookup?${new URLSearchParams({ id: appId }).toString()}`,
+        ].filter(Boolean);
+
+        const errors: string[] = [];
+        for (const url of urls) {
+          try {
+            return await lookupBundleIdFrom(url);
+          } catch (error) {
+            errors.push(error instanceof Error ? error.message : 'unknown');
+          }
+        }
+
+        if (errors.includes('not-found')) {
+          throw new Error('Apple Lookup API 没有查到这个 App');
+        }
+        throw new Error('连接 Apple Lookup API 超时，可能是当前网络或浏览器插件阻断了 itunes.apple.com');
       }
 
       function getActivePanel() {
@@ -457,6 +608,51 @@ function getStatusSummary(entries: typeof schemeEntries) {
       categoryFilter?.addEventListener('change', filterCards);
       capabilityFilter?.addEventListener('change', filterCards);
       statusFilter?.addEventListener('change', filterCards);
+      bundleLookupForm?.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        if (!appStoreUrlInput || !bundleLookupResult || !bundleResultApp || !bundleResultId || !bundleResultCopy) return;
+
+        bundleLookupResult.hidden = true;
+        bundleResultCopy.dataset.copy = '';
+        if (bundleLookupFallback) {
+          bundleLookupFallback.hidden = true;
+          bundleLookupFallback.removeAttribute('href');
+        }
+
+        let parsedUrl;
+        try {
+          parsedUrl = parseAppStoreUrl(appStoreUrlInput.value);
+        } catch (error) {
+          setLookupMessage(error instanceof Error ? error.message : 'URL 无效', 'error');
+          return;
+        }
+
+        setLookupMessage('查询中...');
+        if (bundleLookupFallback) {
+          bundleLookupFallback.href = buildLookupUrl(parsedUrl.appId, parsedUrl.country);
+          bundleLookupFallback.hidden = false;
+        }
+        if (bundleLookupSubmit) {
+          bundleLookupSubmit.disabled = true;
+          bundleLookupSubmit.textContent = '查询中';
+        }
+        try {
+          const app = await lookupBundleId(parsedUrl.appId, parsedUrl.country);
+          const bundleId = String(app.bundleId);
+          bundleResultApp.textContent = String(app.trackName || app.trackCensoredName || parsedUrl.appId);
+          bundleResultId.textContent = bundleId;
+          bundleResultCopy.dataset.copy = bundleId;
+          bundleLookupResult.hidden = false;
+          setLookupMessage('查询完成', 'success');
+        } catch (error) {
+          setLookupMessage(error instanceof Error ? error.message : '查询失败', 'error');
+        } finally {
+          if (bundleLookupSubmit) {
+            bundleLookupSubmit.disabled = false;
+            bundleLookupSubmit.textContent = '查询';
+          }
+        }
+      });
       document.addEventListener('keydown', (event) => {
         const usesFindShortcut = event.key.toLowerCase() === 'f' && (event.metaKey || event.ctrlKey);
         if (!usesFindShortcut || event.altKey || event.shiftKey) return;
