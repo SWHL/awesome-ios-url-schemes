@@ -1,0 +1,38 @@
+name: Issue to PR
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  update-data:
+    if: contains(github.event.issue.labels.*.name, 'new-scheme') || contains(github.event.issue.labels.*.name, 'verified-feedback') || contains(github.event.issue.labels.*.name, 'broken-feedback')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Apply issue update
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python scripts/apply_issue_update.py
+
+      - name: Validate data
+        run: python scripts/validate_data.py
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: issue-${{ github.event.issue.number }}-scheme-update
+          title: "Update schemes from issue #${{ github.event.issue.number }}"
+          body: "Auto-generated from #${{ github.event.issue.number }}. Please review before merging."
+          commit-message: "Update schemes from issue #${{ github.event.issue.number }}"
+          labels: scheme, auto-pr
