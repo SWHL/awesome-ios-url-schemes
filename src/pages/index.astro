@@ -86,6 +86,12 @@ function getStatusSummary(entries: typeof schemeEntries) {
       content="一个可搜索、可复制、可测试打开的 iOS URL Scheme 静态索引。"
     />
     <title>awesome-ios-url-schemes</title>
+    <script is:inline>
+      const storedTheme = localStorage.getItem('theme-preference') || 'system';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
+      document.documentElement.dataset.themePreference = storedTheme;
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -93,18 +99,24 @@ function getStatusSummary(entries: typeof schemeEntries) {
         <span class="brand-mark">⌘</span>
         <span>awesome-ios-url-schemes</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="./guide/">教程</a>
-        <a href="#schemes">索引</a>
-        <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
-        <a href={repositoryUrl} rel="noreferrer">GitHub</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./guide/">教程</a>
+          <a href="#schemes">索引</a>
+          <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+          <a href={repositoryUrl} rel="noreferrer">GitHub</a>
+        </nav>
+        <div class="theme-switcher" aria-label="主题">
+          <button class="theme-option" type="button" data-theme-option="light" aria-label="亮色" title="亮色">☀</button>
+          <button class="theme-option" type="button" data-theme-option="dark" aria-label="暗色" title="暗色">☾</button>
+          <button class="theme-option" type="button" data-theme-option="system" aria-label="跟随系统" title="跟随系统">◐</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Static searchable index</p>
-        <h1 id="page-title">awesome-ios-url-schemes</h1>
+        <h1 id="page-title">Awesome iOS URL Schemes</h1>
         <p class="lede">
           汇总常用 App 与系统入口的 URL Scheme，支持搜索、筛选、复制和在 iPhone 上直接测试打开。
         </p>
@@ -291,6 +303,8 @@ function getStatusSummary(entries: typeof schemeEntries) {
       const statusFilter = document.querySelector<HTMLSelectElement>('#status-filter');
       const viewButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.view-option'));
       const viewPanels = Array.from(document.querySelectorAll<HTMLElement>('[data-view-panel]'));
+      const themeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.theme-option'));
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
       const resultCount = document.querySelector<HTMLOutputElement>('#result-count');
       const emptyState = document.querySelector<HTMLElement>('#empty-state');
       const toast = document.querySelector<HTMLElement>('#toast');
@@ -360,6 +374,23 @@ function getStatusSummary(entries: typeof schemeEntries) {
         filterCards();
       }
 
+      function resolveTheme(preference: string) {
+        return preference === 'system' ? (systemTheme.matches ? 'dark' : 'light') : preference;
+      }
+
+      function setTheme(preference: string) {
+        const nextPreference = ['light', 'dark', 'system'].includes(preference) ? preference : 'system';
+        document.documentElement.dataset.theme = resolveTheme(nextPreference);
+        document.documentElement.dataset.themePreference = nextPreference;
+        localStorage.setItem('theme-preference', nextPreference);
+
+        for (const button of themeButtons) {
+          const active = button.dataset.themeOption === nextPreference;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        }
+      }
+
       function showToast(message: string) {
         if (!toast) return;
 
@@ -423,6 +454,13 @@ function getStatusSummary(entries: typeof schemeEntries) {
       viewButtons.forEach((button) => {
         button.addEventListener('click', () => setView(button.dataset.viewTarget || 'app'));
       });
+      themeButtons.forEach((button) => {
+        button.addEventListener('click', () => setTheme(button.dataset.themeOption || 'system'));
+      });
+      systemTheme.addEventListener('change', () => {
+        if (document.documentElement.dataset.themePreference === 'system') setTheme('system');
+      });
+      setTheme(document.documentElement.dataset.themePreference || 'system');
 
       document.addEventListener('click', async (event) => {
         const target = event.target;

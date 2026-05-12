@@ -16,6 +16,23 @@
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111214;
+  --surface: #1c1d20;
+  --surface-muted: #25262a;
+  --text: #f5f5f7;
+  --muted: #a7a7ad;
+  --border: #47484d;
+  --border-soft: #33343a;
+  --accent: #4da3ff;
+  --accent-hover: #79baff;
+  --success: #6bd58d;
+  --warning: #ffc35a;
+  --danger: #ff7b7b;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -74,7 +91,8 @@ button {
 }
 
 .brand,
-.site-nav {
+.site-nav,
+.header-actions {
   display: flex;
   align-items: center;
 }
@@ -108,8 +126,46 @@ button {
   font-size: 14px;
 }
 
+.header-actions {
+  min-width: 0;
+  gap: 16px;
+}
+
 .site-nav a:hover {
   color: var(--text);
+}
+
+.theme-switcher {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-muted);
+}
+
+.theme-option {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.theme-option:hover {
+  color: var(--text);
+}
+
+.theme-option.is-active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -119,11 +175,11 @@ main {
 }
 
 .hero {
-  padding: 84px 0 44px;
+  padding: 40px 0 34px;
 }
 
 .guide-hero {
-  padding: 84px 0 24px;
+  padding: 40px 0 24px;
 }
 
 .eyebrow {
@@ -149,6 +205,14 @@ h1 {
   line-height: 0.98;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+}
+
+#page-title {
+  max-width: none;
+  font-size: clamp(24px, 6.2vw, 68px);
+  line-height: 1.02;
+  overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 h2 {
@@ -639,7 +703,7 @@ h3 {
 }
 
 .status-chip {
-  background: #eeeeef;
+  background: color-mix(in srgb, var(--muted) 14%, var(--surface));
   color: var(--muted);
 }
 
@@ -670,17 +734,17 @@ h3 {
 }
 
 .status-verified {
-  background: #e8f5ec;
+  background: color-mix(in srgb, var(--success) 14%, var(--surface));
   color: var(--success);
 }
 
 .status-partial {
-  background: #fff4df;
+  background: color-mix(in srgb, var(--warning) 16%, var(--surface));
   color: var(--warning);
 }
 
 .status-deprecated {
-  background: #fdeaea;
+  background: color-mix(in srgb, var(--danger) 14%, var(--surface));
   color: var(--danger);
 }
 
@@ -800,13 +864,13 @@ code {
 
 .works-action:hover {
   border-color: var(--success);
-  background: #e8f5ec;
+  background: color-mix(in srgb, var(--success) 14%, var(--surface));
   color: var(--success);
 }
 
 .broken-action:hover {
   border-color: var(--danger);
-  background: #fdeaea;
+  background: color-mix(in srgb, var(--danger) 14%, var(--surface));
   color: var(--danger);
 }
 
@@ -850,10 +914,21 @@ code {
 
 @media (max-width: 760px) {
   .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
     width: min(100% - 24px, 1120px);
   }
 
+  .header-actions {
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
   .site-nav {
+    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -866,15 +941,19 @@ code {
   }
 
   .hero {
-    padding-top: 56px;
+    padding-top: 28px;
   }
 
   .guide-hero {
-    padding-top: 56px;
+    padding-top: 28px;
   }
 
   h1 {
     font-size: 44px;
+  }
+
+  #page-title {
+    font-size: clamp(21px, 7.2vw, 44px);
   }
 
   .lede {

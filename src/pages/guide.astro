@@ -15,6 +15,12 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Ad
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="awesome-ios-url-schemes 使用教程。" />
     <title>使用教程 - awesome-ios-url-schemes</title>
+    <script is:inline>
+      const storedTheme = localStorage.getItem('theme-preference') || 'system';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
+      document.documentElement.dataset.themePreference = storedTheme;
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -22,17 +28,23 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Ad
         <span class="brand-mark">⌘</span>
         <span>awesome-ios-url-schemes</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="../guide/">教程</a>
-        <a href="../#schemes">索引</a>
-        <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
-        <a href={repositoryUrl} rel="noreferrer">GitHub</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../guide/">教程</a>
+          <a href="../#schemes">索引</a>
+          <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+          <a href={repositoryUrl} rel="noreferrer">GitHub</a>
+        </nav>
+        <div class="theme-switcher" aria-label="主题">
+          <button class="theme-option" type="button" data-theme-option="light" aria-label="亮色" title="亮色">☀</button>
+          <button class="theme-option" type="button" data-theme-option="dark" aria-label="暗色" title="暗色">☾</button>
+          <button class="theme-option" type="button" data-theme-option="system" aria-label="跟随系统" title="跟随系统">◐</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="guide-hero" aria-labelledby="guide-title">
-        <p class="eyebrow">Guide</p>
         <h1 id="guide-title">怎么用</h1>
         <p class="lede">查找、复制、验证、反馈，尽量控制在一次点击内完成。</p>
       </section>
@@ -82,5 +94,34 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Ad
         </div>
       </section>
     </main>
+    <script>
+      const themeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.theme-option'));
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function resolveTheme(preference: string) {
+        return preference === 'system' ? (systemTheme.matches ? 'dark' : 'light') : preference;
+      }
+
+      function setTheme(preference: string) {
+        const nextPreference = ['light', 'dark', 'system'].includes(preference) ? preference : 'system';
+        document.documentElement.dataset.theme = resolveTheme(nextPreference);
+        document.documentElement.dataset.themePreference = nextPreference;
+        localStorage.setItem('theme-preference', nextPreference);
+
+        for (const button of themeButtons) {
+          const active = button.dataset.themeOption === nextPreference;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        }
+      }
+
+      themeButtons.forEach((button) => {
+        button.addEventListener('click', () => setTheme(button.dataset.themeOption || 'system'));
+      });
+      systemTheme.addEventListener('change', () => {
+        if (document.documentElement.dataset.themePreference === 'system') setTheme('system');
+      });
+      setTheme(document.documentElement.dataset.themePreference || 'system');
+    </script>
   </body>
 </html>
