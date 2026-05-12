@@ -1,7 +1,7 @@
 name: 新增 URL Scheme
 description: 提交一个新的 iOS URL Scheme
 title: "Add scheme: "
-labels: ["scheme", "needs-review"]
+labels: ["scheme", "new-scheme", "needs-review"]
 body:
   - type: input
     id: app
@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: source
     attributes:
-      label: 来源
+      label: 来源/测试说明
       placeholder: 链接、截图说明或手动测试说明
     validations:
       required: true

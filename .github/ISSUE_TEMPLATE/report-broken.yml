@@ -1,7 +1,7 @@
 name: 反馈失效
 description: 反馈一个可能失效或行为变化的 URL Scheme
 title: "Report broken scheme: "
-labels: ["scheme", "needs-verification"]
+labels: ["scheme", "broken-feedback", "needs-verification"]
 body:
   - type: input
     id: scheme

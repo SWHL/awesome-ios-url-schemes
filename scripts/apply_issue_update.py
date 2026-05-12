@@ -24,9 +24,24 @@ def save_json(path: Path, data) -> None:
 
 
 def field(body: str, name: str) -> str:
-    pattern = re.compile(rf"^{re.escape(name)}[：:]\s*(.+?)\s*$", re.MULTILINE)
-    match = pattern.search(body)
-    return match.group(1).strip() if match else ""
+    inline_pattern = re.compile(rf"^{re.escape(name)}[：:]\s*(.+?)\s*$", re.MULTILINE)
+    inline_match = inline_pattern.search(body)
+    if inline_match:
+        return clean_field_value(inline_match.group(1))
+
+    form_pattern = re.compile(rf"^###\s+{re.escape(name)}\s*\n+(.*?)(?=\n###\s+|\Z)", re.MULTILINE | re.DOTALL)
+    form_match = form_pattern.search(body)
+    if form_match:
+        return clean_field_value(form_match.group(1))
+
+    return ""
+
+
+def clean_field_value(value: str) -> str:
+    cleaned = value.strip()
+    if cleaned in {"_No response_", "No response"}:
+        return ""
+    return cleaned
 
 
 def extract_payload(body: str, marker: str) -> dict:
@@ -79,10 +94,15 @@ def capability_for(action: str, url: str) -> str:
     return "open-app"
 
 
-def apply_feedback(apps: list[dict], body: str) -> bool:
+def apply_feedback(apps: list[dict], title: str, body: str) -> bool:
     payload = extract_payload(body, "scheme-feedback")
     url = payload.get("url") or field(body, "URL Scheme")
     result = payload.get("result")
+    if not result:
+        if title.startswith(("Report broken scheme:", "Broken scheme:")):
+            result = "broken"
+        elif title.startswith("Verified scheme:"):
+            result = "verified"
     if not url or result not in {"verified", "broken"}:
         return False
 
@@ -111,6 +131,8 @@ def apply_submission(apps: list[dict], body: str) -> bool:
     category = field(body, "分类") or payload.get("category", "")
     status = field(body, "验证状态") or payload.get("status", "unknown")
     source = field(body, "来源/测试说明") or payload.get("source", "")
+    if not source:
+        source = field(body, "来源")
 
     if not app_name or not url or not action:
         return False
@@ -167,9 +189,10 @@ def apply_submission(apps: list[dict], body: str) -> bool:
 
 
 def main() -> None:
+    title = os.environ.get("ISSUE_TITLE", "")
     body = os.environ.get("ISSUE_BODY", "")
     apps = load_json(SCHEMES_PATH)
-    changed = apply_feedback(apps, body) or apply_submission(apps, body)
+    changed = apply_feedback(apps, title, body) or apply_submission(apps, body)
     if changed:
         save_json(SCHEMES_PATH, apps)
         print("updated=true")

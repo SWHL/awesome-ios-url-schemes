@@ -8,7 +8,6 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMES_PATH = ROOT / "src" / "data" / "schemes.json"
 SOURCES_PATH = ROOT / "src" / "data" / "sources.json"
@@ -22,9 +21,9 @@ SLUG_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 def load_json(path: Path):
     try:
-      return json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
-      fail(f"{path}: invalid JSON: {exc}")
+        fail(f"{path}: invalid JSON: {exc}")
 
 
 def fail(message: str) -> None:
@@ -58,7 +57,9 @@ def validate_url_scheme(value: str, context: str) -> None:
         fail(f"{context}: `{value}` must not contain whitespace")
 
 
-def validate_string_list(value, key: str, context: str, *, allow_empty: bool = False) -> None:
+def validate_string_list(
+    value, key: str, context: str, *, allow_empty: bool = False
+) -> None:
     if not isinstance(value, list):
         fail(f"{context}: `{key}` must be a list")
     if not allow_empty and not value:
@@ -151,7 +152,9 @@ def main() -> None:
             if capability not in capability_ids:
                 fail(f"{context}: unknown capability `{capability}`")
             validate_string_list(scheme.get("regions"), "regions", context)
-            validate_string_list(scheme.get("params"), "params", context, allow_empty=True)
+            validate_string_list(
+                scheme.get("params"), "params", context, allow_empty=True
+            )
             scheme_type = require_string(scheme, "type", context)
             if scheme_type not in ALLOWED_SCHEME_TYPES:
                 fail(f"{context}: invalid type `{scheme_type}`")

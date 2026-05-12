@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   update-data:
-    if: contains(github.event.issue.labels.*.name, 'new-scheme') || contains(github.event.issue.labels.*.name, 'verified-feedback') || contains(github.event.issue.labels.*.name, 'broken-feedback')
+    if: contains(github.event.issue.labels.*.name, 'new-scheme') || contains(github.event.issue.labels.*.name, 'verified-feedback') || contains(github.event.issue.labels.*.name, 'broken-feedback') || startsWith(github.event.issue.title, 'Add scheme:') || startsWith(github.event.issue.title, 'Report broken scheme:') || startsWith(github.event.issue.title, 'Broken scheme:') || startsWith(github.event.issue.title, 'Verified scheme:') || contains(github.event.issue.body, 'scheme-submission') || contains(github.event.issue.body, 'scheme-feedback')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,11 +22,12 @@ jobs:
 
       - name: Apply issue update
         env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
-        run: python scripts/apply_issue_update.py
+        run: python3 scripts/apply_issue_update.py
 
       - name: Validate data
-        run: python scripts/validate_data.py
+        run: python3 scripts/validate_data.py
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
