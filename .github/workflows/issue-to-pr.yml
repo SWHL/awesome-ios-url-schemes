@@ -34,6 +34,9 @@ jobs:
         with:
           branch: issue-${{ github.event.issue.number }}-scheme-update
           title: "Update schemes from issue #${{ github.event.issue.number }}"
-          body: "Auto-generated from #${{ github.event.issue.number }}. Please review before merging."
+          body: |
+            Closes #${{ github.event.issue.number }}
+
+            Auto-generated from #${{ github.event.issue.number }}. Please review before merging.
           commit-message: "Update schemes from issue #${{ github.event.issue.number }}"
           labels: scheme, auto-pr
