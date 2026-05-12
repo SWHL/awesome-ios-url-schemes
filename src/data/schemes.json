@@ -7963,5 +7963,40 @@
         "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
       }
     ]
+  },
+  {
+    "app": "AppPrefs",
+    "localizedName": "小米运动健康",
+    "slug": "app-prefs",
+    "bundleId": "com.xiaomi.miwatch.pro",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "User Submitted"
+    ],
+    "sourceIds": [
+      "user-submission"
+    ],
+    "schemes": [
+      {
+        "url": "app-prefs://com.xiaomi.miwatch.pro",
+        "action": "快速打开小米运动健康App设置界面",
+        "description": "小米运动健康 - 快速打开小米运动健康App设置界面",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "已验证"
+      }
+    ]
   }
 ]
