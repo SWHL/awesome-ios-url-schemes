@@ -1,0 +1,461 @@
+---
+import '../styles/global.css';
+import schemes from '../data/schemes.json';
+import categories from '../data/categories.json';
+import capabilities from '../data/capabilities.json';
+import SchemeRow from '../components/SchemeRow.astro';
+
+const totalApps = schemes.length;
+const totalSchemes = schemes.reduce((count, app) => count + app.schemes.length, 0);
+const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
+const capabilityNames = Object.fromEntries(capabilities.map((capability) => [capability.id, capability.name]));
+const categoryNames = Object.fromEntries(categories.map((category) => [category.id, category.name]));
+const typeNames: Record<string, string> = {
+  scheme: 'Scheme',
+  universal_link: 'Universal Link',
+  webview: 'WebView',
+};
+const statusNames: Record<string, string> = {
+  verified: '已验证',
+  partial: '部分可用',
+  deprecated: '可能失效',
+  unknown: '未验证',
+};
+const newSchemeBody = `请补充下面信息，提交后会自动生成一个待审核 PR。\n\nApp 名称：\nBundle ID：\nURL Scheme：\n用途：\n分类：\n验证状态：unknown\n来源/测试说明：\n\n<!-- scheme-submission\n{\n  "type": "scheme-submission",\n  "app": "",\n  "bundleId": "",\n  "url": "",\n  "action": "",\n  "category": "",\n  "status": "unknown",\n  "source": ""\n}\n-->`;
+const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Add scheme: ')}&labels=${encodeURIComponent(
+  'scheme,new-scheme',
+)}&body=${encodeURIComponent(newSchemeBody)}`;
+
+const schemeEntries = schemes.flatMap((app) =>
+  app.schemes.map((scheme) => {
+    const appName = app.localizedName || app.app;
+    const capabilityName = capabilityNames[scheme.capability] || scheme.capability;
+    const typeName = typeNames[scheme.type] || scheme.type;
+    const statusName = statusNames[scheme.status] || scheme.status;
+    const regions = scheme.regions?.length ? scheme.regions : ['Global'];
+    const params = scheme.params?.length ? scheme.params : [];
+    const searchText = `${app.app} ${app.localizedName} ${app.bundleId} ${app.category} ${categoryNames[app.category] || ''} ${app.tags.join(
+      ' ',
+    )} ${scheme.url} ${scheme.action} ${scheme.description} ${capabilityName} ${regions.join(' ')} ${params.join(' ')} ${typeName}`;
+
+    return {
+      app,
+      appName,
+      scheme,
+      capabilityName,
+      typeName,
+      statusName,
+      regions,
+      params,
+      searchText,
+    };
+  }),
+);
+
+const capabilityGroups = capabilities
+  .map((capability) => ({
+    ...capability,
+    entries: schemeEntries.filter((entry) => entry.scheme.capability === capability.id),
+  }))
+  .filter((capability) => capability.entries.length > 0);
+
+function getStatusSummary(entries: typeof schemeEntries) {
+  const verified = entries.filter((entry) => entry.scheme.status === 'verified').length;
+  const partial = entries.filter((entry) => entry.scheme.status === 'partial').length;
+  const deprecated = entries.filter((entry) => entry.scheme.status === 'deprecated').length;
+  const unknown = entries.length - verified - partial - deprecated;
+
+  return [
+    verified > 0 ? `已验证 ${verified}` : '',
+    partial > 0 ? `部分可用 ${partial}` : '',
+    deprecated > 0 ? `可能失效 ${deprecated}` : '',
+    unknown > 0 ? `未验证 ${unknown}` : '',
+  ]
+    .filter(Boolean)
+    .join(' / ');
+}
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个可搜索、可复制、可测试打开的 iOS URL Scheme 静态索引。"
+    />
+    <title>awesome-ios-url-schemes</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="awesome-ios-url-schemes">
+        <span class="brand-mark">⌘</span>
+        <span>awesome-ios-url-schemes</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./guide/">教程</a>
+        <a href="#schemes">索引</a>
+        <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+        <a href={repositoryUrl} rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Static searchable index</p>
+        <h1 id="page-title">awesome-ios-url-schemes</h1>
+        <p class="lede">
+          汇总常用 App 与系统入口的 URL Scheme，支持搜索、筛选、复制和在 iPhone 上直接测试打开。
+        </p>
+        <div class="stats" aria-label="Index stats">
+          <div>
+            <strong>{totalApps}</strong>
+            <span>Apps</span>
+          </div>
+          <div>
+            <strong>{totalSchemes}</strong>
+            <span>Schemes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="tool-panel" id="schemes" aria-labelledby="schemes-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Directory</p>
+            <h2 id="schemes-title">Scheme 目录</h2>
+          </div>
+          <div class="panel-actions">
+            <a class="primary-action" href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+            <output class="result-count" id="result-count">{totalSchemes} 条</output>
+          </div>
+        </div>
+
+        <div class="view-switcher" aria-label="视图">
+          <button class="view-option is-active" type="button" data-view-target="app" aria-pressed="true">按 App</button>
+          <button class="view-option" type="button" data-view-target="capability" aria-pressed="false">按能力</button>
+          <button class="view-option" type="button" data-view-target="list" aria-pressed="false">全部列表</button>
+        </div>
+
+        <div class="controls" aria-label="Search and filters">
+          <label class="search-field">
+            <span class="sr-only">搜索</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.8 18.1a7.3 7.3 0 1 1 5.2-2.2l4 4a1 1 0 0 1-1.4 1.4l-4-4a7.3 7.3 0 0 1-3.8 1ZM5.5 10.8a5.3 5.3 0 1 0 10.6 0 5.3 5.3 0 0 0-10.6 0Z"
+              ></path>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="搜索 App、scheme、Bundle ID、分类..."
+              autocomplete="off"
+            />
+          </label>
+
+          <label class="select-field">
+            <span>分类</span>
+            <select id="category-filter">
+              <option value="all">全部</option>
+              {categories.map((category) => <option value={category.id}>{category.name}</option>)}
+            </select>
+          </label>
+
+          <label class="select-field">
+            <span>能力</span>
+            <select id="capability-filter">
+              <option value="all">全部</option>
+              {capabilities.map((capability) => <option value={capability.id}>{capability.name}</option>)}
+            </select>
+          </label>
+
+          <label class="select-field">
+            <span>状态</span>
+            <select id="status-filter">
+              <option value="all">全部</option>
+              <option value="verified">已验证</option>
+              <option value="partial">部分可用</option>
+              <option value="deprecated">可能失效</option>
+              <option value="unknown">未验证</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="view-panel" data-view-panel="app">
+          <div class="app-directory">
+            {
+              schemes.map((app) => {
+                const appName = app.localizedName || app.app;
+                const entries = schemeEntries.filter((entry) => entry.app.slug === app.slug);
+                const categoryName = categoryNames[app.category] || app.category;
+
+                return (
+                  <article class="app-card result-group">
+                    <details>
+                      <summary class="app-summary">
+                        <span class="app-summary-main">
+                          <strong>{appName}</strong>
+                          <span>{app.bundleId}</span>
+                        </span>
+                        <span class="app-summary-meta">
+                          <span>{categoryName}</span>
+                          <span>{entries.length} 条</span>
+                          <span>{getStatusSummary(entries)}</span>
+                        </span>
+                      </summary>
+                      <div class="scheme-table-wrap compact">
+                        <table class="scheme-table app-scheme-table">
+                          <thead>
+                            <tr>
+                              <th scope="col">URL Scheme</th>
+                              <th scope="col">作用</th>
+                              <th scope="col">元数据</th>
+                              <th scope="col">操作</th>
+                            </tr>
+                          </thead>
+                          <tbody>{entries.map((entry) => <SchemeRow entry={entry} repositoryUrl={repositoryUrl} />)}</tbody>
+                        </table>
+                      </div>
+                    </details>
+                  </article>
+                );
+              })
+            }
+          </div>
+        </div>
+
+        <div class="view-panel" data-view-panel="capability" hidden>
+          <div class="app-directory">
+            {
+              capabilityGroups.map((capability) => (
+                <article class="app-card result-group">
+                  <details>
+                    <summary class="app-summary">
+                      <span class="app-summary-main">
+                        <strong>{capability.name}</strong>
+                        <span>{capability.id}</span>
+                      </span>
+                      <span class="app-summary-meta">
+                        <span>{capability.entries.length} 条</span>
+                        <span>{new Set(capability.entries.map((entry) => entry.app.slug)).size} 个 App</span>
+                        <span>{getStatusSummary(capability.entries)}</span>
+                      </span>
+                    </summary>
+                    <div class="scheme-table-wrap compact">
+                      <table class="scheme-table capability-scheme-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">应用</th>
+                            <th scope="col">URL Scheme</th>
+                            <th scope="col">作用</th>
+                            <th scope="col">元数据</th>
+                            <th scope="col">操作</th>
+                          </tr>
+                        </thead>
+                        <tbody>{capability.entries.map((entry) => <SchemeRow entry={entry} showApp repositoryUrl={repositoryUrl} />)}</tbody>
+                      </table>
+                    </div>
+                  </details>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="scheme-table-wrap view-panel" data-view-panel="list" hidden>
+          <table class="scheme-table" id="scheme-list">
+            <thead>
+              <tr>
+                <th scope="col">应用</th>
+                <th scope="col">URL Scheme</th>
+                <th scope="col">作用</th>
+                <th scope="col">元数据</th>
+                <th scope="col">操作</th>
+              </tr>
+            </thead>
+            <tbody>{schemeEntries.map((entry) => <SchemeRow entry={entry} showApp repositoryUrl={repositoryUrl} />)}</tbody>
+          </table>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>没有匹配的 Scheme。</p>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const searchInput = document.querySelector<HTMLInputElement>('#search-input');
+      const categoryFilter = document.querySelector<HTMLSelectElement>('#category-filter');
+      const capabilityFilter = document.querySelector<HTMLSelectElement>('#capability-filter');
+      const statusFilter = document.querySelector<HTMLSelectElement>('#status-filter');
+      const viewButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.view-option'));
+      const viewPanels = Array.from(document.querySelectorAll<HTMLElement>('[data-view-panel]'));
+      const resultCount = document.querySelector<HTMLOutputElement>('#result-count');
+      const emptyState = document.querySelector<HTMLElement>('#empty-state');
+      const toast = document.querySelector<HTMLElement>('#toast');
+      let toastTimer: number | undefined;
+
+      function normalize(value: unknown) {
+        return String(value || '').trim().toLowerCase();
+      }
+
+      function getActivePanel() {
+        return viewPanels.find((panel) => !panel.hidden);
+      }
+
+      function filterCards() {
+        if (!searchInput || !categoryFilter || !capabilityFilter || !statusFilter || !resultCount || !emptyState) {
+          return;
+        }
+
+        const query = normalize(searchInput.value);
+        const category = categoryFilter.value;
+        const capability = capabilityFilter.value;
+        const status = statusFilter.value;
+        const activePanel = getActivePanel();
+        let activeVisible = 0;
+
+        for (const panel of viewPanels) {
+          const rows = Array.from(panel.querySelectorAll<HTMLTableRowElement>('.scheme-item'));
+          let panelVisible = 0;
+
+          for (const row of rows) {
+            const matchesQuery = !query || normalize(row.dataset.search).includes(query);
+            const matchesCategory = category === 'all' || row.dataset.category === category;
+            const matchesCapability = capability === 'all' || row.dataset.capability === capability;
+            const matchesStatus = status === 'all' || row.dataset.status === status;
+            const show = matchesQuery && matchesCategory && matchesCapability && matchesStatus;
+            row.hidden = !show;
+            if (show) panelVisible += 1;
+          }
+
+          for (const group of Array.from(panel.querySelectorAll<HTMLElement>('.result-group'))) {
+            const visibleRows = group.querySelectorAll('.scheme-item:not([hidden])').length;
+            group.hidden = visibleRows === 0;
+
+            if (visibleRows > 0 && query) {
+              group.querySelector('details')?.setAttribute('open', '');
+            }
+          }
+
+          if (panel === activePanel) activeVisible = panelVisible;
+        }
+
+        resultCount.textContent = `${activeVisible} 条`;
+        emptyState.hidden = activeVisible !== 0;
+      }
+
+      function setView(nextView: string) {
+        for (const button of viewButtons) {
+          const active = button.dataset.viewTarget === nextView;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        }
+
+        for (const panel of viewPanels) {
+          panel.hidden = panel.dataset.viewPanel !== nextView;
+        }
+
+        filterCards();
+      }
+
+      function showToast(message: string) {
+        if (!toast) return;
+
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => {
+          toast.classList.remove('is-visible');
+        }, 1800);
+      }
+
+      async function copyText(value: string) {
+        const onCopy = (event: ClipboardEvent) => {
+          event.clipboardData?.setData('text/plain', value);
+          event.preventDefault();
+        };
+
+        document.addEventListener('copy', onCopy);
+        try {
+          if (document.execCommand('copy')) return true;
+        } finally {
+          document.removeEventListener('copy', onCopy);
+        }
+
+        const textarea = document.createElement('textarea');
+        textarea.value = value;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.top = '0';
+        textarea.style.left = '-9999px';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+
+        let copied = false;
+        try {
+          copied = document.execCommand('copy');
+        } finally {
+          document.body.removeChild(textarea);
+        }
+
+        if (copied) return true;
+
+        if (navigator.clipboard?.writeText && window.isSecureContext) {
+          try {
+            await navigator.clipboard.writeText(value);
+            return true;
+          } catch {
+            return false;
+          }
+        }
+
+        return copied;
+      }
+
+      searchInput?.addEventListener('input', filterCards);
+      categoryFilter?.addEventListener('change', filterCards);
+      capabilityFilter?.addEventListener('change', filterCards);
+      statusFilter?.addEventListener('change', filterCards);
+      viewButtons.forEach((button) => {
+        button.addEventListener('click', () => setView(button.dataset.viewTarget || 'app'));
+      });
+
+      document.addEventListener('click', async (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const copyButton = target.closest<HTMLButtonElement>('.copy-button');
+        if (copyButton) {
+          const value = copyButton.dataset.copy;
+          if (!value) return;
+
+          showToast((await copyText(value)) ? '已复制' : '复制失败，请手动选择复制');
+
+          return;
+        }
+
+        const shareButton = target.closest<HTMLButtonElement>('.share-button');
+        if (!shareButton) return;
+
+        const shareTitle = shareButton.dataset.shareTitle || 'awesome-ios-url-schemes';
+        const shareText = shareButton.dataset.shareText || '';
+
+        if (navigator.share) {
+          try {
+            await navigator.share({ title: shareTitle, text: shareText });
+            showToast('已分享');
+          } catch {
+            showToast('已取消分享');
+          }
+          return;
+        }
+
+        showToast((await copyText(shareText)) ? '分享内容已复制' : '复制失败，请手动选择复制');
+      });
+    </script>
+  </body>
+</html>

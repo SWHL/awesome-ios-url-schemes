@@ -1,0 +1,93 @@
+[
+  {
+    "id": "zhihu-660270338",
+    "title": "知乎专栏 iOS URL Scheme 汇总",
+    "url": "https://zhuanlan.zhihu.com/p/660270338",
+    "type": "article",
+    "status": "seed"
+  },
+  {
+    "id": "gist-zhuziyi1989",
+    "title": "zhuziyi1989 iOS URL Schemes Gist",
+    "url": "https://gist.github.com/zhuziyi1989/3f96a73c45a87778b560e44cb551ebd2",
+    "type": "gist",
+    "status": "seed"
+  },
+  {
+    "id": "techregister-shortcuts",
+    "title": "Always Updated List of iOS App URL Scheme Names & Paths for Shortcuts",
+    "url": "https://www.techregister.co.uk/always-updated-list-of-ios-app-url-scheme-names-paths-for-shortcuts-ios/",
+    "type": "article",
+    "status": "seed"
+  },
+  {
+    "id": "wengyuehting-collection",
+    "title": "WengYuehTing URL Scheme Collection",
+    "url": "https://github.com/WengYuehTing/url-scheme-collection",
+    "type": "repository",
+    "status": "seed"
+  },
+  {
+    "id": "csdn-gy5338",
+    "title": "CSDN iOS URL Scheme 汇总",
+    "url": "https://blog.csdn.net/GY5338/article/details/141426774",
+    "type": "article",
+    "status": "seed"
+  },
+  {
+    "id": "appmiao-2018",
+    "title": "App喵 URL Scheme 文章",
+    "url": "https://www.appmiao.com/article/2018",
+    "type": "article",
+    "status": "seed"
+  },
+  {
+    "id": "dodoo-system-protocol",
+    "title": "Dodoo 系统协议",
+    "url": "https://dodoo.co/system/protocol",
+    "type": "directory",
+    "status": "seed"
+  },
+  {
+    "id": "phynet-ios-url-schemes",
+    "title": "phynet iOS URL Schemes",
+    "url": "https://github.com/phynet/iOS-URL-Schemes",
+    "type": "repository",
+    "status": "seed"
+  },
+  {
+    "id": "paralevel-ios-settings",
+    "title": "paralevel iOS Settings URLs",
+    "url": "https://github.com/paralevel/ios-settings-urls",
+    "type": "repository",
+    "status": "seed"
+  },
+  {
+    "id": "paralevel-apple-app-urls",
+    "title": "paralevel Apple App URLs",
+    "url": "https://github.com/paralevel/apple-app-urls",
+    "type": "repository",
+    "status": "seed"
+  },
+  {
+    "id": "b1tzer-collection",
+    "title": "b1tzer URL Schemes Collection",
+    "url": "https://github.com/b1tzer/url-schemes-collection",
+    "type": "repository",
+    "status": "seed"
+  },
+  {
+    "id": "curated-chat-2026-05-12",
+    "title": "Project curated URL Scheme seed list",
+    "url": "https://github.com/SWHL/awesome-ios-url-schemes",
+    "type": "curated-list",
+    "status": "seed"
+  },
+  {
+    "id": "user-submission",
+    "title": "User submitted URL Scheme reports",
+    "url": "https://github.com/SWHL/awesome-ios-url-schemes/issues",
+    "type": "issue",
+    "status": "community"
+  }
+]

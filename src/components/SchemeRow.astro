@@ -1,0 +1,121 @@
+---
+interface Props {
+  entry: {
+    app: {
+      app: string;
+      localizedName?: string;
+      slug: string;
+      bundleId: string;
+      category: string;
+    };
+    appName: string;
+    scheme: {
+      url: string;
+      action: string;
+      capability: string;
+      status: string;
+      type: string;
+    };
+    capabilityName: string;
+    statusName: string;
+    regions: string[];
+    params: string[];
+    searchText: string;
+  };
+  showApp?: boolean;
+  repositoryUrl: string;
+}
+
+const { entry, showApp = false, repositoryUrl } = Astro.props;
+const { app, appName, scheme, capabilityName, statusName, regions, params, searchText } = entry;
+const feedbackBase = `${repositoryUrl}/issues/new`;
+const worksPayload = {
+  type: 'scheme-feedback',
+  result: 'verified',
+  app: appName,
+  slug: app.slug,
+  url: scheme.url,
+  action: scheme.action,
+};
+const brokenPayload = {
+  ...worksPayload,
+  result: 'broken',
+};
+const worksBody = `这条 URL Scheme 已验证可用。\n\nApp: ${appName}\nURL Scheme: ${scheme.url}\n用途: ${scheme.action}\n\n测试环境：\n- 设备：\n- iOS：\n- App 版本：\n\n<!-- scheme-feedback\n${JSON.stringify(worksPayload, null, 2)}\n-->`;
+const brokenBody = `这条 URL Scheme 可能已经失效。\n\nApp: ${appName}\nURL Scheme: ${scheme.url}\n用途: ${scheme.action}\n\n实际情况：\n- \n\n测试环境：\n- 设备：\n- iOS：\n- App 版本：\n\n<!-- scheme-feedback\n${JSON.stringify(brokenPayload, null, 2)}\n-->`;
+const worksUrl = `${feedbackBase}?title=${encodeURIComponent(`Verified scheme: ${scheme.url}`)}&labels=${encodeURIComponent(
+  'scheme,verified-feedback',
+)}&body=${encodeURIComponent(worksBody)}`;
+const brokenUrl = `${feedbackBase}?title=${encodeURIComponent(`Broken scheme: ${scheme.url}`)}&labels=${encodeURIComponent(
+  'scheme,broken-feedback',
+)}&body=${encodeURIComponent(brokenBody)}`;
+---
+
+<tr
+  class="scheme-row scheme-item"
+  data-app={app.app}
+  data-localized={app.localizedName}
+  data-slug={app.slug}
+  data-bundle={app.bundleId}
+  data-category={app.category}
+  data-capability={scheme.capability}
+  data-status={scheme.status}
+  data-url={scheme.url}
+  data-regions={regions.join(' ')}
+  data-params={params.join(' ')}
+  data-type={scheme.type}
+  data-search={searchText}
+>
+  {
+    showApp && (
+      <td>
+        <strong class="app-name">{appName}</strong>
+      </td>
+    )
+  }
+  <td>
+    <code>{scheme.url}</code>
+  </td>
+  <td class="purpose-cell">{scheme.action}</td>
+  <td>
+    <div class="meta-grid">
+      <span class={`status-chip status-${scheme.status}`}>{statusName}</span>
+      <span class="meta-chip">{capabilityName}</span>
+      <span class="meta-chip meta-region" aria-label={`地区：${regions.join(' / ')}`}>{regions.join(' / ')}</span>
+      {params.length > 0 && <span class="meta-chip meta-params" aria-label={`参数：${params.join(', ')}`}>{params.map((param) => `{${param}}`).join(' ')}</span>}
+    </div>
+  </td>
+  <td>
+    <div class="actions">
+      <button class="icon-action copy-button" type="button" data-copy={scheme.url} data-tooltip="复制" aria-label="复制 URL Scheme" title="复制">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-1v1a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h1V7Zm2 1h3a3 3 0 0 1 3 3v3h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v1Zm-3 2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H7Z"></path>
+        </svg>
+      </button>
+      <a
+        class="icon-action feedback-action works-action"
+        href={worksUrl}
+        rel="noreferrer"
+        data-tooltip="可用"
+        aria-label="反馈可用"
+        title="可用"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9.2 16.6 4.9 12.3l1.4-1.4 2.9 2.9 8.5-8.5 1.4 1.4-9.9 9.9Z"></path>
+        </svg>
+      </a>
+      <a
+        class="icon-action feedback-action broken-action"
+        href={brokenUrl}
+        rel="noreferrer"
+        data-tooltip="失效"
+        aria-label="反馈失效"
+        title="失效"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 10.6 4.3-4.3 1.4 1.4-4.3 4.3 4.3 4.3-1.4 1.4-4.3-4.3-4.3 4.3-1.4-1.4 4.3-4.3-4.3-4.3 1.4-1.4 4.3 4.3Z"></path>
+        </svg>
+      </a>
+    </div>
+  </td>
+</tr>

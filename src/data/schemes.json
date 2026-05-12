@@ -1,0 +1,7967 @@
+[
+  {
+    "app": "Disk115",
+    "localizedName": "115",
+    "slug": "115",
+    "bundleId": "com.ylmf.115",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Cloud",
+      "Storage"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "oof.disk://scan",
+        "action": "扫一扫",
+        "description": "115 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Ganji58",
+    "localizedName": "58同城",
+    "slug": "58",
+    "bundleId": "com.wuba",
+    "category": "local-services",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Local Services"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "wbmain://jump/core/capture",
+        "action": "扫一扫",
+        "description": "58同城 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "IQiyi",
+    "localizedName": "爱奇艺",
+    "slug": "iqiyi",
+    "bundleId": "com.qiyi.iphone",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Media"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "iqiyi://mobile/scan",
+        "action": "扫一扫",
+        "description": "爱奇艺 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "qiyi-iphone://",
+        "action": "爱奇艺视频",
+        "description": "爱奇艺 - 爱奇艺视频",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "BaiduBrowser",
+    "localizedName": "百度浏览器",
+    "slug": "baidu-browser",
+    "bundleId": "com.baidu.searchbox",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Browser",
+      "Baidu"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "baiduboxapp://browse?url={url}",
+        "action": "网址搜索",
+        "description": "百度浏览器 - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Changba",
+    "localizedName": "唱吧",
+    "slug": "changba",
+    "bundleId": "com.changba.ktv",
+    "category": "music",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Karaoke",
+      "Music"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "changba://?ac=personalpage&userid={uid}",
+        "action": "用户主页",
+        "description": "唱吧 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Dianping",
+    "localizedName": "大众点评",
+    "slug": "dianping",
+    "bundleId": "com.dianping.dpscope",
+    "category": "local-services",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Local Services",
+      "Reviews"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "dianping://searchshoplist?keyword={query}",
+        "action": "应用内搜索",
+        "description": "大众点评 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "dianping://",
+        "action": "打开大众点评",
+        "description": "大众点评 - 打开大众点评",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Qingju",
+    "localizedName": "滴滴青桔",
+    "slug": "didi-qingju",
+    "bundleId": "com.didi.qingju",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Bike",
+      "Transport"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "blackhorse://qrscan",
+        "action": "扫一扫",
+        "description": "滴滴青桔 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "DingTalk",
+    "localizedName": "钉钉",
+    "slug": "dingtalk",
+    "bundleId": "com.laiwang.DingTalk",
+    "category": "productivity",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Office",
+      "Collaboration"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "dingtalk://",
+        "action": "打开钉钉",
+        "description": "钉钉 - 打开钉钉",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "dingtalk://dingtalkclient/page/scan",
+        "action": "扫一扫",
+        "description": "钉钉 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "dingtalk://dingtalkclient/page/link?url=https://h5.dingtalk.com/zproject/profile.html?profile={uid}",
+        "action": "用户主页",
+        "description": "钉钉 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Douyin",
+    "localizedName": "抖音",
+    "slug": "douyin",
+    "bundleId": "com.ss.iphone.ugc.Aweme",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "ByteDance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk1128://aweme/live/{roomId}",
+        "action": "打开直播",
+        "description": "抖音 - 打开直播",
+        "capability": "live",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "roomId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1128://aweme/detail/{itemId}",
+        "action": "打开作品",
+        "description": "抖音 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1128://user/profile/{uid}",
+        "action": "用户主页",
+        "description": "抖音 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1128://webview?url={url}&from=webview&refer=web",
+        "action": "WebView 打开网页",
+        "description": "抖音 - WebView 打开网页",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "webview",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1128://",
+        "action": "打开抖音",
+        "description": "抖音 - 打开抖音",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "snssdk1128://feed?refer=web&gd_label={{gd_label}}",
+        "action": "首页",
+        "description": "抖音 - 首页",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "gd_label"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "DouyinIntl",
+    "localizedName": "抖音国际版",
+    "slug": "tiktok",
+    "bundleId": "com.zhiliaoapp.musically",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "ByteDance",
+      "Global"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk1233://user/profile/{uid}",
+        "action": "用户主页",
+        "description": "抖音国际版 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1233://",
+        "action": "打开抖音国际版",
+        "description": "抖音国际版 - 打开抖音国际版",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Huoshan",
+    "localizedName": "抖音火山版",
+    "slug": "douyin-huoshan",
+    "bundleId": "com.ss.iphone.ugc.Live",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "ByteDance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk1112://item?id={itemId}",
+        "action": "打开作品",
+        "description": "抖音火山版 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk1112://profile?id={uid}",
+        "action": "用户主页",
+        "description": "抖音火山版 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "DouyinLite",
+    "localizedName": "抖音极速版",
+    "slug": "douyin-lite",
+    "bundleId": "com.ss.iphone.ugc.AwemeLite",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "ByteDance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk2329://user/profile/{uid}",
+        "action": "用户主页",
+        "description": "抖音极速版 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk2329://",
+        "action": "抖音极速版 TikTok",
+        "description": "抖音极速版 - 抖音极速版 TikTok",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Douban",
+    "localizedName": "豆瓣",
+    "slug": "douban",
+    "bundleId": "com.douban.frodo",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Books",
+      "Movies",
+      "Community"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "douban:///search?q={query}",
+        "action": "应用内搜索",
+        "description": "豆瓣 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Dmall",
+    "localizedName": "多点",
+    "slug": "dmall",
+    "bundleId": "com.dmall.Dmall",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Retail",
+      "Shopping"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "scanDesktop://",
+        "action": "扫一扫",
+        "description": "多点 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Eleme",
+    "localizedName": "饿了么",
+    "slug": "eleme",
+    "bundleId": "me.ele.ios.eleme",
+    "category": "food",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Food",
+      "Delivery"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "eleme://code_scanner",
+        "action": "扫一扫",
+        "description": "饿了么 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Feishu",
+    "localizedName": "飞书",
+    "slug": "feishu",
+    "bundleId": "com.larksuite.feishu",
+    "category": "productivity",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Office",
+      "Collaboration"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "feishu://applink.feishu.cn/client/qrcode/main?",
+        "action": "扫一扫",
+        "description": "飞书 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Amap",
+    "localizedName": "高德地图",
+    "slug": "amap",
+    "bundleId": "com.autonavi.amap",
+    "category": "maps",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Maps",
+      "Navigation"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "iosamap://",
+        "action": "打开高德地图",
+        "description": "高德地图 - 打开高德地图",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "iosamap://path?sourceApplication=日历&sid=BGVIS1&sname=$我的位置&did=BGVIS2&dname=目的地&dlat=纬度&dlon=经度&dev=0&m=0&t=0",
+        "action": "高德导航",
+        "description": "高德地图 - 高德导航",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "sourceApplication",
+          "sid",
+          "sname",
+          "did",
+          "dname",
+          "dlat",
+          "dlon",
+          "dev",
+          "m",
+          "t"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "坐标可根据需要自行修改。t 为出行方式：0 驾车，1 公交，2 步行。m 为出行要求：驾车 0 速度最快、1 费用最少、2 距离最短、3 不走高速、4 躲避拥堵、5 不走高速且避免收费、6 不走高速且躲避拥堵、7 躲避收费和拥堵、8 不走高速躲避收费和拥堵；公交 0 最快捷、2 最少换乘、3 最少步行、5 不乘地铁、7 只坐地铁、8 时间短。"
+      }
+    ]
+  },
+  {
+    "app": "Toutiao",
+    "localizedName": "今日头条",
+    "slug": "toutiao",
+    "bundleId": "com.ss.iphone.article.News",
+    "category": "news",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "News",
+      "ByteDance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk141://profile?uid={uid}",
+        "action": "用户主页",
+        "description": "今日头条 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk141://",
+        "action": "打开今日头条",
+        "description": "今日头条 - 打开今日头条",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "JD",
+    "localizedName": "京东",
+    "slug": "jd",
+    "bundleId": "com.360buy.jdmobile",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"saoasao\"}",
+        "action": "扫一扫",
+        "description": "京东 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "openapp.jdmobile://virtual?params={\"des\":\"productList\",\"keyWord\":\"{query}\",\"from\":\"search\",\"category\":\"jump\"}",
+        "action": "应用内搜索",
+        "description": "京东 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "openapp.jdmobile://",
+        "action": "打开京东",
+        "description": "京东 - 打开京东",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Shortcuts",
+    "localizedName": "快捷指令",
+    "slug": "shortcuts",
+    "bundleId": "com.apple.shortcuts",
+    "category": "productivity",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Apple",
+      "Automation"
+    ],
+    "sourceIds": [
+      "techregister-shortcuts",
+      "paralevel-apple-app-urls",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "shortcuts://",
+        "action": "打开快捷指令",
+        "description": "Open the Shortcuts app.",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "",
+        "capability": "open-app",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "workflow://run-workflow?name={name}&input={input}",
+        "action": "运行快捷指令",
+        "description": "快捷指令 - 运行快捷指令",
+        "capability": "tool",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "name",
+          "input"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes this is for older Shortcuts versions and may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Kuaishou",
+    "localizedName": "快手",
+    "slug": "kuaishou",
+    "bundleId": "com.kuaishou.gif",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Live"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "kwai://gamezone/game/{gameId}",
+        "action": "打开游戏",
+        "description": "快手 - 打开游戏",
+        "capability": "game",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "gameId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://live/play/{roomId}",
+        "action": "打开直播",
+        "description": "快手 - 打开直播",
+        "capability": "live",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "roomId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://work/{itemId}",
+        "action": "打开作品",
+        "description": "快手 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://qrscan",
+        "action": "扫一扫",
+        "description": "快手 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://search?keyword={query}",
+        "action": "应用内搜索",
+        "description": "快手 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://profile/{uid}",
+        "action": "用户主页",
+        "description": "快手 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://webview?url={url}",
+        "action": "WebView 打开网页",
+        "description": "快手 - WebView 打开网页",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "webview",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "kwai://",
+        "action": "打开快手",
+        "description": "快手 - 打开快手",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "KuaishouLite",
+    "localizedName": "快手极速版",
+    "slug": "kuaishou-lite",
+    "bundleId": "com.kuaishou.nebula",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Live"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "ksnebula://qrscan",
+        "action": "扫一扫",
+        "description": "快手极速版 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "ksnebula://search?keyword={query}",
+        "action": "应用内搜索",
+        "description": "快手极速版 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "ksnebula://profile/{uid}",
+        "action": "用户主页",
+        "description": "快手极速版 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Oasis",
+    "localizedName": "绿洲",
+    "slug": "oasis",
+    "bundleId": "com.sina.oasis",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Lifestyle"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "oasis://user?uid={uid}",
+        "action": "用户主页",
+        "description": "绿洲 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Meituan",
+    "localizedName": "美团",
+    "slug": "meituan",
+    "bundleId": "com.meituan.imeituan",
+    "category": "local-services",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Local Services",
+      "Food",
+      "Lifestyle"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "imeituan://www.meituan.com/web?url=https://awp.meituan.com/payfe/union-pay-qrcode/index.html",
+        "action": "付款码",
+        "description": "美团 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "imeituan://www.meituan.com/scanQRCode?openAR=1",
+        "action": "扫一扫",
+        "description": "美团 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "openAR"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "imeituan://www.meituan.com/search?q={query}",
+        "action": "应用内搜索",
+        "description": "美团 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "imeituan://",
+        "action": "打开美团",
+        "description": "美团 - 打开美团",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "MeituanWaimai",
+    "localizedName": "美团外卖",
+    "slug": "meituan-waimai",
+    "bundleId": "com.meituan.iToGo",
+    "category": "food",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Food",
+      "Delivery"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "meituanwaimai://waimai.meituan.com/search?query={query}",
+        "action": "应用内搜索",
+        "description": "美团外卖 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "meituanwaimai://",
+        "action": "打开美团外卖",
+        "description": "美团外卖 - 打开美团外卖",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Eudic",
+    "localizedName": "欧陆词典",
+    "slug": "eudic",
+    "bundleId": "com.eusoft.eudic",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Dictionary",
+      "Learning"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "eudic://dict/{query}",
+        "action": "应用内搜索",
+        "description": "欧陆词典 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Pipixia",
+    "localizedName": "皮皮虾",
+    "slug": "pipixia",
+    "bundleId": "com.sup.android.superb",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Community"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "bds://cell_detail?item_id={itemId}",
+        "action": "打开作品",
+        "description": "皮皮虾 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Pinduoduo",
+    "localizedName": "拼多多",
+    "slug": "pinduoduo",
+    "bundleId": "com.xunmeng.pinduoduo",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "pinduoduo://yangkeduo.com/search_result.html?search_key={query}",
+        "action": "应用内搜索",
+        "description": "拼多多 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "pinduoduo://",
+        "action": "打开拼多多",
+        "description": "拼多多 - 打开拼多多",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "QuanminKge",
+    "localizedName": "全民K歌",
+    "slug": "quanmin-kge",
+    "bundleId": "com.tencent.karaoke",
+    "category": "music",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Karaoke",
+      "Music",
+      "Tencent"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "qmkege://kege.com?action=profile&uid={uid}",
+        "action": "用户主页",
+        "description": "全民K歌 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Settings",
+    "localizedName": "设置",
+    "slug": "settings",
+    "bundleId": "com.apple.Preferences",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Apple",
+      "System",
+      "Settings"
+    ],
+    "sourceIds": [
+      "paralevel-ios-settings",
+      "paralevel-apple-app-urls",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "App-Prefs:",
+        "action": "打开设置",
+        "description": "Open the Settings app.",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "System URLs can change across iOS versions.",
+        "capability": "open-app",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "App-Prefs:root=WIFI",
+        "action": "打开无线局域网设置",
+        "description": "Open Wi-Fi settings when supported by the current iOS version.",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Availability varies by iOS version and launch context.",
+        "capability": "open-app",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "Perfs:root=ControlCenter&path=CUSTOMIZE_CONTROLS",
+        "action": "设置",
+        "description": "设置 - 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General",
+        "action": "通用",
+        "description": "设置 - 通用",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=ACCESSIBILITY",
+        "action": "辅助功能",
+        "description": "设置 - 辅助功能",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=Keyboard",
+        "action": "键盘设置",
+        "description": "设置 - 键盘设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=Keyboard/KEYBOARDS",
+        "action": "键盘设置 → 键盘",
+        "description": "设置 - 键盘设置 → 键盘",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=STORAGE_ICLOUD_USAGE/DEVICE_STORAGE",
+        "action": "存储空间",
+        "description": "设置 - 存储空间",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=ManagedConfigurationList",
+        "action": "描述文件",
+        "description": "设置 - 描述文件",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=DATE_AND_TIME",
+        "action": "日期与时间修改",
+        "description": "设置 - 日期与时间修改",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=INTERNATIONAL",
+        "action": "语言与地区",
+        "description": "设置 - 语言与地区",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=Reset",
+        "action": "还原",
+        "description": "设置 - 还原",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=General&path=AUTOLOCK",
+        "action": "自动锁定时间修改页面",
+        "description": "设置 - 自动锁定时间修改页面",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Privacy&path=LOCATION",
+        "action": "隐私设置 → 定位设置",
+        "description": "设置 - 隐私设置 → 定位设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=BATTERY_USAGE",
+        "action": "电池电量",
+        "description": "设置 - 电池电量",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=MOBILE_DATA_SETTINGS_ID",
+        "action": "蜂窝数据",
+        "description": "设置 - 蜂窝数据",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Bluetooth",
+        "action": "蓝牙设置",
+        "description": "设置 - 蓝牙设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=DISPLAY",
+        "action": "显示设置",
+        "description": "设置 - 显示设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Sounds",
+        "action": "声音设置",
+        "description": "设置 - 声音设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Sounds&path=Ringtone",
+        "action": "铃声设置",
+        "description": "设置 - 铃声设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Wallpaper",
+        "action": "墙纸设置",
+        "description": "设置 - 墙纸设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=INTERNET_TETHERING",
+        "action": "热点设置",
+        "description": "设置 - 热点设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=AIRPLANE_MODE",
+        "action": "飞行模式",
+        "description": "设置 - 飞行模式",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=ACCOUNT_SETTINGS",
+        "action": "邮件设置",
+        "description": "设置 - 邮件设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=FACETIME",
+        "action": "Facetime通话设置",
+        "description": "设置 - Facetime通话设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=MUSIC",
+        "action": "音乐设置",
+        "description": "设置 - 音乐设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=NOTES",
+        "action": "备忘录设置",
+        "description": "设置 - 备忘录设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=NOTIFICATIONS_ID",
+        "action": "通知设置",
+        "description": "设置 - 通知设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=TOUCHID_PASSCODE",
+        "action": "指纹/面容与密码",
+        "description": "设置 - 指纹/面容与密码",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=PASSBOOK",
+        "action": "钱包与 Apple Pay",
+        "description": "设置 - 钱包与 Apple Pay",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Phone",
+        "action": "电话设置",
+        "description": "设置 - 电话设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=Photos",
+        "action": "照片设置",
+        "description": "设置 - 照片设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=SIRI",
+        "action": "Siri 设置",
+        "description": "设置 - Siri 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=WIFI",
+        "action": "无线局域网 WIFI 设置",
+        "description": "设置 - 无线局域网 WIFI 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=CASTLE",
+        "action": "iCloud 设置",
+        "description": "设置 - iCloud 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Prefs:root=STORE",
+        "action": "App Store 设置",
+        "description": "设置 - App Store 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Smzdm",
+    "localizedName": "什么值得买",
+    "slug": "smzdm",
+    "bundleId": "com.smzdm.client",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Deals"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "smzdm://search?json={\"channelName\":\"home\",\"search_type\":\"1\",\"keyWord\":\"{query}\"}",
+        "action": "应用内搜索",
+        "description": "什么值得买 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "TaiwanPay",
+    "localizedName": "台灣Pay",
+    "slug": "taiwan-pay",
+    "bundleId": "tw.com.twmp.wallet",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Payment",
+      "Taiwan"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "twmpshortcut://?type=scan",
+        "action": "付款码",
+        "description": "台灣Pay - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "twmpshortcut://?type=payment",
+        "action": "扫一扫",
+        "description": "台灣Pay - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Taobao",
+    "localizedName": "淘宝",
+    "slug": "taobao",
+    "bundleId": "com.taobao.taobao4iphone",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "taobao://tb.cn/n/scancode",
+        "action": "扫一扫",
+        "description": "淘宝 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "taobao://s.taobao.com?q={query}",
+        "action": "应用内搜索",
+        "description": "淘宝 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "taobao://",
+        "action": "打开淘宝",
+        "description": "淘宝 - 打开淘宝",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "taobao://s.taobao.com/?q=充电宝",
+        "action": "搜索",
+        "description": "淘宝 - 搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Tmall",
+    "localizedName": "天猫",
+    "slug": "tmall",
+    "bundleId": "com.tmall.wireless",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "tmall://page.tm/search?q={query}",
+        "action": "应用内搜索",
+        "description": "天猫 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "NeteaseNews",
+    "localizedName": "网易新闻",
+    "slug": "netease-news",
+    "bundleId": "com.netease.news",
+    "category": "news",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "News"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "newsapp://doc/{postId}",
+        "action": "打开新闻",
+        "description": "网易新闻 - 打开新闻",
+        "capability": "news",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "postId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "newsapp://",
+        "action": "打开网易新闻",
+        "description": "网易新闻 - 打开网易新闻",
+        "capability": "news",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "NeteaseMusic",
+    "localizedName": "网易云音乐",
+    "slug": "netease-music",
+    "bundleId": "com.netease.cloudmusic",
+    "category": "music",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Music"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "orpheus://song/{musicId}",
+        "action": "打开音乐",
+        "description": "网易云音乐 - 打开音乐",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "musicId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "orpheus://nm/user/home?id={uid}",
+        "action": "用户主页",
+        "description": "网易云音乐 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "orpheus://",
+        "action": "网易云音乐（旧版）",
+        "description": "网易云音乐 - 网易云音乐（旧版）",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheus://recognize",
+        "action": "识别音乐",
+        "description": "网易云音乐 - 识别音乐",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheus://download",
+        "action": "本地音乐",
+        "description": "网易云音乐 - 本地音乐",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheus://radio",
+        "action": "私人FM",
+        "description": "网易云音乐 - 私人FM",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheus://playlist/32778108",
+        "action": "我的喜欢",
+        "description": "网易云音乐 - 我的喜欢",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheuswidget://",
+        "action": "网易云音乐（新版）",
+        "description": "网易云音乐 - 网易云音乐（新版）",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "orpheuswidget://recognize",
+        "action": "识别歌曲",
+        "description": "网易云音乐 - 识别歌曲",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Weibo",
+    "localizedName": "微博",
+    "slug": "weibo",
+    "bundleId": "com.sina.weibo",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Microblog"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "sinaweibo://qrcode",
+        "action": "扫一扫",
+        "description": "微博 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "sinaweibo://searchall?q={query}",
+        "action": "应用内搜索",
+        "description": "微博 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "sinaweibo://userinfo?uid={uid}",
+        "action": "用户主页",
+        "description": "微博 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weibo://",
+        "action": "打开微博",
+        "description": "微博 - 打开微博",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "sinaweibo://",
+        "action": "打开微博",
+        "description": "微博 - 打开微博",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weibo://qrcode",
+        "action": "扫一扫",
+        "description": "微博 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "WeiboIntl",
+    "localizedName": "微博国际版",
+    "slug": "weibo-international",
+    "bundleId": "com.weibo.international",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Microblog"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "weibointernational://qrcode",
+        "action": "扫一扫",
+        "description": "微博国际版 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weibointernational://searchall?q={query}",
+        "action": "应用内搜索",
+        "description": "微博国际版 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weibointernational://",
+        "action": "打开微博国际版",
+        "description": "微博国际版 - 打开微博国际版",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weibointernational://hotsearch",
+        "action": "热搜",
+        "description": "微博国际版 - 热搜",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "WeiboLite",
+    "localizedName": "微博极速版",
+    "slug": "weibo-lite",
+    "bundleId": "com.sina.weibolite",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Microblog"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "weibolite://qrcode",
+        "action": "扫一扫",
+        "description": "微博极速版 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weibolite://searchall?q={query}",
+        "action": "应用内搜索",
+        "description": "微博极速版 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Weishi",
+    "localizedName": "微视",
+    "slug": "weishi",
+    "bundleId": "com.tencent.weishi",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Tencent"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "weishi://feed?feed_id={itemId}",
+        "action": "打开作品",
+        "description": "微视 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weishi://profile?person_id={uid}",
+        "action": "用户主页",
+        "description": "微视 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "WeChat",
+    "localizedName": "微信",
+    "slug": "wechat",
+    "bundleId": "com.tencent.xin",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tencent",
+      "Social",
+      "Chat"
+    ],
+    "sourceIds": [
+      "zhihu-660270338",
+      "gist-zhuziyi1989",
+      "phynet-ios-url-schemes",
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "weixin://",
+        "action": "打开微信",
+        "description": "微信 - 打开微信",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "weixin://widget/pay",
+        "action": "付款码",
+        "description": "微信 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "v8.0.42 可用。"
+      },
+      {
+        "url": "weixin://scanqrcode",
+        "action": "扫一扫",
+        "description": "微信 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "weixin://dl/scan",
+        "action": "扫一扫",
+        "description": "微信 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/feedback",
+        "action": "反馈",
+        "description": "微信 - 反馈",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/moments",
+        "action": "朋友圈",
+        "description": "微信 - 朋友圈",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/settings",
+        "action": "设置",
+        "description": "微信 - 设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/notifications",
+        "action": "消息通知设置",
+        "description": "微信 - 消息通知设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/chat",
+        "action": "聊天设置",
+        "description": "微信 - 聊天设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/general",
+        "action": "通用设置",
+        "description": "微信 - 通用设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/officialaccounts",
+        "action": "公众号",
+        "description": "微信 - 公众号",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/games",
+        "action": "游戏",
+        "description": "微信 - 游戏",
+        "capability": "game",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/help",
+        "action": "帮助",
+        "description": "微信 - 帮助",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/profile",
+        "action": "个人信息",
+        "description": "微信 - 个人信息",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "weixin://dl/features",
+        "action": "功能插件",
+        "description": "微信 - 功能插件",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Xigua",
+    "localizedName": "西瓜视频",
+    "slug": "xigua",
+    "bundleId": "com.ss.iphone.article.Video",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "ByteDance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "snssdk32://xigua_live?room_id={roomId}",
+        "action": "打开直播",
+        "description": "西瓜视频 - 打开直播",
+        "capability": "live",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "roomId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "snssdk32://detail?groupid={itemId}",
+        "action": "打开作品",
+        "description": "西瓜视频 - 打开作品",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "itemId"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Xiaohongshu",
+    "localizedName": "小红书",
+    "slug": "xiaohongshu",
+    "bundleId": "com.xingin.discover",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Lifestyle",
+      "Community"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "xhsdiscover://search/result?keyword={query}",
+        "action": "应用内搜索",
+        "description": "小红书 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "xhsdiscover://user/{uid}",
+        "action": "用户主页",
+        "description": "小红书 - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "EasyWallet",
+    "localizedName": "悠遊付",
+    "slug": "easy-wallet",
+    "bundleId": "tw.com.easycard.easycardwallet",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Payment",
+      "Taiwan"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "tw.com.easycard.easycardwallet://paymentCode",
+        "action": "付款码",
+        "description": "悠遊付 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "UnionPay",
+    "localizedName": "云闪付",
+    "slug": "unionpay",
+    "bundleId": "com.unionpay.chsp",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Payment",
+      "Finance"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "upwallet://rn/rnhtmlridingcode",
+        "action": "乘车码",
+        "description": "云闪付 - 乘车码",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "upwallet://pay",
+        "action": "付款码",
+        "description": "云闪付 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "upwallet://native/scanCode",
+        "action": "扫一扫",
+        "description": "云闪付 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Alipay",
+    "localizedName": "支付宝",
+    "slug": "alipay",
+    "bundleId": "com.alipay.iphoneclient",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Payment",
+      "Finance"
+    ],
+    "sourceIds": [
+      "zhihu-660270338",
+      "gist-zhuziyi1989",
+      "b1tzer-collection",
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "alipays://platformapi/startapp?appId=68687599",
+        "action": "芭芭农场",
+        "description": "支付宝 - 芭芭农场",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=200011235",
+        "action": "出行",
+        "description": "支付宝 - 出行",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipay://",
+        "action": "打开支付宝",
+        "description": "Open Alipay when installed.",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Payment-related schemes should be tested carefully.",
+        "capability": "open-app",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "alipay://platformapi/startapp?appId=20000778",
+        "action": "滴滴出行",
+        "description": "支付宝 - 滴滴出行",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000056",
+        "action": "付款码",
+        "description": "支付宝 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000199",
+        "action": "花呗",
+        "description": "支付宝 - 花呗",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=2018061360359342",
+        "action": "货拉拉",
+        "description": "支付宝 - 货拉拉",
+        "capability": "mini-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "支付宝小程序。"
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=60000002",
+        "action": "蚂蚁森林",
+        "description": "支付宝 - 蚂蚁森林",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=68687809",
+        "action": "蚂蚁新村",
+        "description": "支付宝 - 蚂蚁新村",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=66666674",
+        "action": "蚂蚁庄园",
+        "description": "支付宝 - 蚂蚁庄园",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=2019060365493242",
+        "action": "全国住房公积金",
+        "description": "支付宝 - 全国住房公积金",
+        "capability": "mini-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "支付宝小程序。"
+      },
+      {
+        "url": "alipays://platformapi/startapp?saId=10000007",
+        "action": "扫一扫",
+        "description": "支付宝 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=2021003115672468",
+        "action": "神奇海洋",
+        "description": "支付宝 - 神奇海洋",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=68687886",
+        "action": "神奇物种",
+        "description": "支付宝 - 神奇物种",
+        "capability": "service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000193",
+        "action": "生活缴费",
+        "description": "支付宝 - 生活缴费",
+        "capability": "life-service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000123",
+        "action": "收款码",
+        "description": "支付宝 - 收款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=10000003",
+        "action": "手机充值",
+        "description": "支付宝 - 手机充值",
+        "capability": "life-service",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000033",
+        "action": "提现",
+        "description": "支付宝 - 提现",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000032",
+        "action": "余额宝",
+        "description": "支付宝 - 余额宝",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000869",
+        "action": "运动",
+        "description": "支付宝 - 运动",
+        "capability": "fitness",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000003",
+        "action": "账单",
+        "description": "支付宝 - 账单",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "appId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000118",
+        "action": "芝麻信用",
+        "description": "支付宝 - 芝麻信用",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000116",
+        "action": "转账",
+        "description": "支付宝 - 转账",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "saId"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=10000007",
+        "action": "扫一扫",
+        "description": "支付宝 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?appId=20000056",
+        "action": "付款码",
+        "description": "支付宝 - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?saId=20000123",
+        "action": "收款码",
+        "description": "支付宝 - 收款码",
+        "capability": "qr-card",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000116",
+        "action": "转账",
+        "description": "支付宝 - 转账",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipay://platformapi/startapp?saId=88886666",
+        "action": "发红包",
+        "description": "支付宝 - 发红包",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000168",
+        "action": "记账本",
+        "description": "支付宝 - 记账本",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipay://platformapi/startapp?appId=20000254&actionType=createGroup",
+        "action": "创建群聊",
+        "description": "支付宝 - 创建群聊",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipay://platformapi/startapp?appId=60000002",
+        "action": "蚂蚁森林",
+        "description": "支付宝 - 蚂蚁森林",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipayqr://platformapi/startapp?appId=10000003",
+        "action": "手机充值",
+        "description": "支付宝 - 手机充值",
+        "capability": "life-service",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "alipays://platformapi/startapp?appId=20000754",
+        "action": "快递查询",
+        "description": "支付宝 - 快递查询",
+        "capability": "life-service",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Zhihu",
+    "localizedName": "知乎",
+    "slug": "zhihu",
+    "bundleId": "com.zhihu.ios",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Knowledge",
+      "Community"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "zhihu://question/{qid}",
+        "action": "打开问题",
+        "description": "知乎 - 打开问题",
+        "capability": "question",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "qid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "zhihu://codereader",
+        "action": "扫一扫",
+        "description": "知乎 - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "zhihu://search?q={query}",
+        "action": "应用内搜索",
+        "description": "知乎 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "zhihu://",
+        "action": "打开知乎",
+        "description": "知乎 - 打开知乎",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "zhihu://articles/27758684",
+        "action": "某篇文章",
+        "description": "知乎 - 某篇文章",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "zhihu://columns/lishuai",
+        "action": "某个专栏",
+        "description": "知乎 - 某个专栏",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Bilibili",
+    "localizedName": "bilibili",
+    "slug": "bilibili",
+    "bundleId": "tv.danmaku.bilianime",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Community"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "bilibili://qrcode",
+        "action": "扫一扫",
+        "description": "bilibili - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "bilibili://search?keyword={query}",
+        "action": "应用内搜索",
+        "description": "bilibili - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "bilibili://space/{uid}",
+        "action": "用户主页",
+        "description": "bilibili - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "bilibili://",
+        "action": "打开哔哩哔哩",
+        "description": "哔哩哔哩 - 打开哔哩哔哩",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Facebook",
+    "localizedName": "Facebook",
+    "slug": "facebook",
+    "bundleId": "com.facebook.Facebook",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "fb://qrcode",
+        "action": "扫一扫",
+        "description": "Facebook - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "fb://profile/{uid}",
+        "action": "用户主页",
+        "description": "Facebook - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "FamilyMart",
+    "localizedName": "FamilyMart",
+    "slug": "familymart",
+    "bundleId": "tw.com.family.familymart",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Retail",
+      "Taiwan"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "familymart://action.go/pay/barcode",
+        "action": "付款码",
+        "description": "FamilyMart - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Firefox",
+    "localizedName": "Firefox",
+    "slug": "firefox",
+    "bundleId": "org.mozilla.ios.Firefox",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Browser",
+      "Mozilla"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "firefox://open-url?url={url}",
+        "action": "网址搜索",
+        "description": "Firefox - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Chrome",
+    "localizedName": "Google Chrome",
+    "slug": "google-chrome",
+    "bundleId": "com.google.chrome.ios",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Browser",
+      "Google"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "googlechrome://{url}",
+        "action": "网址搜索",
+        "description": "Google Chrome - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Instagram",
+    "localizedName": "Instagram",
+    "slug": "instagram",
+    "bundleId": "com.burbn.instagram",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Photo"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "instagram://tag?name={query}",
+        "action": "应用内搜索",
+        "description": "Instagram - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "instagram://user?username={uid}",
+        "action": "用户主页",
+        "description": "Instagram - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "iOS",
+    "localizedName": "iOS",
+    "slug": "ios",
+    "bundleId": "com.apple.springboard",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Apple",
+      "System",
+      "iOS"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "prefs:root=Wallpaper",
+        "action": "壁纸设置",
+        "description": "iOS - 壁纸设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "calc://",
+        "action": "打开计算器",
+        "description": "iOS - 打开计算器",
+        "capability": "tool",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "camera://",
+        "action": "打开相机",
+        "description": "iOS - 打开相机",
+        "capability": "camera",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=BATTERY_USAGE",
+        "action": "电池电量",
+        "description": "iOS - 电池电量",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=Privacy&path=LOCATION",
+        "action": "定位服务",
+        "description": "iOS - 定位服务",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=MOBILE_DATA_SETTINGS_ID",
+        "action": "蜂窝网络设置",
+        "description": "iOS - 蜂窝网络设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "Prefs:root=General&path=About",
+        "action": "关于本机",
+        "description": "iOS - 关于本机",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "tel://电话号码",
+        "action": "呼叫电话",
+        "description": "iOS - 呼叫电话",
+        "capability": "phone",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "电话号码"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=General&path=Reset",
+        "action": "恢复出厂设置",
+        "description": "iOS - 恢复出厂设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=TOUCHID_PASSCODE",
+        "action": "面容 ID 与密码",
+        "description": "iOS - 面容 ID 与密码",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=Bluetooth",
+        "action": "设置的蓝牙页面",
+        "description": "iOS - 设置的蓝牙页面",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=General&path=ACCESSIBILITY",
+        "action": "设置的通用页面",
+        "description": "iOS - 设置的通用页面",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "URL 指向辅助功能设置。"
+      },
+      {
+        "url": "prefs:root=NOTIFICATIONS_ID",
+        "action": "通知设置",
+        "description": "iOS - 通知设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=WIFI",
+        "action": "无线局域网设置",
+        "description": "iOS - 无线局域网设置",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "Prefs:root=Privacy",
+        "action": "隐私与安全性",
+        "description": "iOS - 隐私与安全性",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=General&path=INTERNATIONAL",
+        "action": "语言与地区",
+        "description": "iOS - 语言与地区",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=General&path=AUTOLOCK",
+        "action": "自动锁定时间修改页面",
+        "description": "iOS - 自动锁定时间修改页面",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "prefs:root=General&path=ManagedConfigurationList",
+        "action": "VPN与设备管理",
+        "description": "iOS - VPN与设备管理",
+        "capability": "settings",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "root",
+          "path"
+        ],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Line",
+    "localizedName": "Line",
+    "slug": "line",
+    "bundleId": "jp.naver.line",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Chat",
+      "Payment",
+      "Taiwan"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "line://nv/QRCode",
+        "action": "二维码名片",
+        "description": "Line - 二维码名片",
+        "capability": "qr-card",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "line://pay/generateQR",
+        "action": "付款码",
+        "description": "Line - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "line://pay/generateQR?from=SC&menuOrigin=IPASS",
+        "action": "付款码 (Line Pay Money)",
+        "description": "Line - 付款码 (Line Pay Money)",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "https://line.me/R/nv/QRCodeReader",
+        "action": "扫一扫",
+        "description": "Line - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "Global",
+          "TW"
+        ],
+        "params": [],
+        "type": "universal_link",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Linkedin",
+    "localizedName": "LinkedIn",
+    "slug": "linkedin",
+    "bundleId": "com.linkedin.LinkedIn",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Career",
+      "Social"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "linkedin://profile/{uid}",
+        "action": "用户主页",
+        "description": "LinkedIn - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "OpenPoint",
+    "localizedName": "OpenPoint",
+    "slug": "openpoint",
+    "bundleId": "com.president.transnet",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Retail",
+      "Taiwan"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "openpointapp://gofeature?featureId=OPWAAB24",
+        "action": "付款码",
+        "description": "OpenPoint - 付款码",
+        "capability": "payment-code",
+        "regions": [
+          "TW"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Pinterest",
+    "localizedName": "Pinterest",
+    "slug": "pinterest",
+    "bundleId": "pinterest",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Images"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "pinterest://user/{uid}",
+        "action": "用户主页",
+        "description": "Pinterest - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "QQ",
+    "localizedName": "QQ",
+    "slug": "qq",
+    "bundleId": "com.tencent.mqq",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tencent",
+      "Social",
+      "Chat"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mqqapi://qrcode/scan_qrcode?version=1&src_type=app",
+        "action": "扫一扫",
+        "description": "QQ - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "mqqapi://card/show_pslcard?src_type=internal&version=1&uin={uid}",
+        "action": "用户主页",
+        "description": "QQ - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "mqq://",
+        "action": "打开手机 QQ",
+        "description": "手机 QQ - 打开手机 QQ",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "QQBrowser",
+    "localizedName": "QQ浏览器",
+    "slug": "qq-browser",
+    "bundleId": "com.tencent.mttlite",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Browser",
+      "Tencent"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mqqbrowser://url={url}",
+        "action": "网址搜索",
+        "description": "QQ浏览器 - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "mqqbrowser://",
+        "action": "打开QQ浏览器",
+        "description": "QQ浏览器 - 打开QQ浏览器",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "QQMusic",
+    "localizedName": "QQ音乐",
+    "slug": "qqmusic",
+    "bundleId": "com.tencent.QQMusic",
+    "category": "music",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tencent",
+      "Music"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qqmusic://http://qq.com/ui/recognize",
+        "action": "听歌识曲",
+        "description": "QQ音乐 - 听歌识曲",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "qqmusic://",
+        "action": "QQ音乐启动",
+        "description": "QQ音乐 - QQ音乐启动",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "verified",
+        "lastVerified": "2026-05-12",
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "qqmusic://qq.com/ui/recognize",
+        "action": "识别音乐",
+        "description": "QQ音乐 - 识别音乐",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "qqmusic://qq.com/media/resumeSong?p=%7B%7D",
+        "action": "继续播放",
+        "description": "QQ音乐 - 继续播放",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Safari",
+    "localizedName": "Safari 浏览器",
+    "slug": "safari",
+    "bundleId": "com.apple.mobilesafari",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Apple",
+      "Browser"
+    ],
+    "sourceIds": [
+      "paralevel-apple-app-urls",
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "x-web-search:",
+        "action": "打开 Safari 搜索",
+        "description": "Open a web search in Safari.",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "",
+        "capability": "open-app",
+        "regions": [
+          "Global"
+        ],
+        "params": [],
+        "type": "scheme"
+      },
+      {
+        "url": "x-web-search://?{url}",
+        "action": "网址搜索",
+        "description": "Safari 浏览器 - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "x-web-search://?{query}",
+        "action": "应用内搜索",
+        "description": "Safari 浏览器 - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "x-web-search://",
+        "action": "打开 Safari 浏览器",
+        "description": "Safari - 打开 Safari 浏览器",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Tim",
+    "localizedName": "TIM",
+    "slug": "tim",
+    "bundleId": "com.tencent.tim",
+    "category": "productivity",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tencent",
+      "Chat",
+      "Office"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12"
+    ],
+    "schemes": [
+      {
+        "url": "tim://qrcode/scan_qrcode?version=1&src_type=app",
+        "action": "扫一扫",
+        "description": "TIM - 扫一扫",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "app": "Twitter",
+    "localizedName": "Twitter",
+    "slug": "twitter",
+    "bundleId": "com.atebits.Tweetie2",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social",
+      "Microblog"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "twitter://search?query={query}",
+        "action": "应用内搜索",
+        "description": "Twitter - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "twitter://user?screen_name={uid}",
+        "action": "用户主页",
+        "description": "Twitter - 用户主页",
+        "capability": "profile",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "uid"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "twitter://",
+        "action": "打开Twitter",
+        "description": "Twitter - 打开Twitter",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "twitter://user?id=12345",
+        "action": "用户",
+        "description": "Twitter - 用户",
+        "capability": "profile",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "UCBrowser",
+    "localizedName": "UC浏览器",
+    "slug": "uc-browser",
+    "bundleId": "com.ucweb.iphone.lowversion",
+    "category": "browser",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Browser"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "ucbrowser://{url}",
+        "action": "网址搜索",
+        "description": "UC浏览器 - 网址搜索",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [
+          "url"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "ucbrowser://",
+        "action": "打开UC浏览器",
+        "description": "UC浏览器 - 打开UC浏览器",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Youtube",
+    "localizedName": "YouTube",
+    "slug": "youtube",
+    "bundleId": "com.google.ios.youtube",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Video",
+      "Google"
+    ],
+    "sourceIds": [
+      "curated-chat-2026-05-12",
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "youtube://results?search_query={query}",
+        "action": "应用内搜索",
+        "description": "YouTube - 应用内搜索",
+        "capability": "app-search",
+        "regions": [
+          "Global"
+        ],
+        "params": [
+          "query"
+        ],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": ""
+      },
+      {
+        "url": "youtube://",
+        "action": "打开YouTube",
+        "description": "YouTube - 打开YouTube",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "AppleWallet",
+    "localizedName": "iOS 钱包",
+    "slug": "apple-wallet",
+    "bundleId": "unknown.apple-wallet",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "shoebox://url-scheme",
+        "action": "打开iOS 钱包",
+        "description": "iOS 钱包 - 打开iOS 钱包",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Map",
+    "localizedName": "地图",
+    "slug": "map",
+    "bundleId": "unknown.map",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "map://",
+        "action": "打开地图",
+        "description": "地图 - 打开地图",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "ClockWorldclock",
+    "localizedName": "时钟",
+    "slug": "clock-worldclock",
+    "bundleId": "unknown.clock-worldclock",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "Clock-worldclock://",
+        "action": "世界时钟",
+        "description": "时钟 - 世界时钟",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Clock-alarm://",
+        "action": "闹钟",
+        "description": "时钟 - 闹钟",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Clock-stopwatch://",
+        "action": "秒表",
+        "description": "时钟 - 秒表",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "Clock-timer://",
+        "action": "倒计时",
+        "description": "时钟 - 倒计时",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "ApplePhotos",
+    "localizedName": "相册",
+    "slug": "apple-photos",
+    "bundleId": "unknown.apple-photos",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "Photos://",
+        "action": "打开相册",
+        "description": "相册 - 打开相册",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Fmip1",
+    "localizedName": "查找 iPhone",
+    "slug": "fmip1",
+    "bundleId": "unknown.fmip1",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "fmip1://",
+        "action": "打开查找 iPhone",
+        "description": "查找 iPhone - 打开查找 iPhone",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Phone",
+    "localizedName": "电话",
+    "slug": "phone",
+    "bundleId": "unknown.phone",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "tel://110",
+        "action": "打电话",
+        "description": "电话 - 打电话",
+        "capability": "phone",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Messages",
+    "localizedName": "短信",
+    "slug": "messages",
+    "bundleId": "unknown.messages",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "sms://13812345678",
+        "action": "给某人发送短信",
+        "description": "短信 - 给某人发送短信",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "AppleNotes",
+    "localizedName": "备忘录",
+    "slug": "apple-notes",
+    "bundleId": "unknown.apple-notes",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mobilenotes://",
+        "action": "打开备忘录",
+        "description": "备忘录 - 打开备忘录",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "AppleCalendar",
+    "localizedName": "日历",
+    "slug": "apple-calendar",
+    "bundleId": "unknown.apple-calendar",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "calshow://",
+        "action": "打开日历",
+        "description": "日历 - 打开日历",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Https",
+    "localizedName": "查看某app",
+    "slug": "https",
+    "bundleId": "unknown.https",
+    "category": "system",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "System"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "https://itunes.apple.com/cn/app/id741597322?mt=8",
+        "action": "查看某app",
+        "description": "查看某app - 查看某app",
+        "capability": "open-url",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "universal_link",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Surge",
+    "localizedName": "Surge",
+    "slug": "surge",
+    "bundleId": "unknown.surge",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "surge://",
+        "action": "打开Surge",
+        "description": "Surge - 打开Surge",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "surge://start?autoclose=true",
+        "action": "开始选择的连接 surge://start[?autoclose=true]",
+        "description": "Surge - 开始选择的连接 surge://start[?autoclose=true]",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "surge://stop?autoclose=true",
+        "action": "关闭默认连接 surge://stop[?autoclose=true]",
+        "description": "Surge - 关闭默认连接 surge://stop[?autoclose=true]",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Chrome",
+    "localizedName": "Chrome",
+    "slug": "chrome",
+    "bundleId": "unknown.chrome",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "googlechrome://",
+        "action": "打开Chrome",
+        "description": "Chrome - 打开Chrome",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Baidusso",
+    "localizedName": "手机百度",
+    "slug": "baidusso",
+    "bundleId": "unknown.baidusso",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "BaiduSSO://",
+        "action": "打开手机百度",
+        "description": "手机百度 - 打开手机百度",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Duolingo",
+    "localizedName": "Duolingo 多邻",
+    "slug": "duolingo",
+    "bundleId": "unknown.duolingo",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "duolingo://",
+        "action": "打开Duolingo 多邻",
+        "description": "Duolingo 多邻 - 打开Duolingo 多邻",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Videoleap",
+    "localizedName": "Videoleap",
+    "slug": "videoleap",
+    "bundleId": "unknown.videoleap",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "videoleap://",
+        "action": "打开Videoleap",
+        "description": "Videoleap - 打开Videoleap",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "ComSogouSogouinput",
+    "localizedName": "搜狗输入法",
+    "slug": "com-sogou-sogouinput",
+    "bundleId": "unknown.com-sogou-sogouinput",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "com.sogou.sogouinput://",
+        "action": "打开搜狗输入法",
+        "description": "搜狗输入法 - 打开搜狗输入法",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Qzzb",
+    "localizedName": "圈子账本",
+    "slug": "qzzb",
+    "bundleId": "unknown.qzzb",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qzzb://",
+        "action": "打开圈子账本",
+        "description": "圈子账本 - 打开圈子账本",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Findmykey",
+    "localizedName": "我的密码",
+    "slug": "findmykey",
+    "bundleId": "unknown.findmykey",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "findmykey://",
+        "action": "打开我的密码",
+        "description": "我的密码 - 打开我的密码",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Wcc",
+    "localizedName": "我查查",
+    "slug": "wcc",
+    "bundleId": "unknown.wcc",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "wcc://",
+        "action": "打开我查查",
+        "description": "我查查 - 打开我查查",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Yddict",
+    "localizedName": "有道词典",
+    "slug": "yddict",
+    "bundleId": "unknown.yddict",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "yddict://",
+        "action": "打开有道词典",
+        "description": "有道词典 - 打开有道词典",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Camcard",
+    "localizedName": "名片全能王",
+    "slug": "camcard",
+    "bundleId": "unknown.camcard",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "camcard://",
+        "action": "打开名片全能王",
+        "description": "名片全能王 - 打开名片全能王",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Evernote",
+    "localizedName": "Evernote",
+    "slug": "evernote",
+    "bundleId": "unknown.evernote",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "evernote://",
+        "action": "打开Evernote",
+        "description": "Evernote - 打开Evernote",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Thunder",
+    "localizedName": "迅雷",
+    "slug": "thunder",
+    "bundleId": "unknown.thunder",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "thunder://",
+        "action": "打开迅雷",
+        "description": "迅雷 - 打开迅雷",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Qqpim",
+    "localizedName": "QQ同步助手",
+    "slug": "qqpim",
+    "bundleId": "unknown.qqpim",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qqpim://",
+        "action": "打开QQ同步助手",
+        "description": "QQ同步助手 - 打开QQ同步助手",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Sinaweather",
+    "localizedName": "天气通",
+    "slug": "sinaweather",
+    "bundleId": "unknown.sinaweather",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "sinaweather://",
+        "action": "打开天气通",
+        "description": "天气通 - 打开天气通",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Rm434209233Mojiweather",
+    "localizedName": "墨迹天气",
+    "slug": "rm434209233mojiweather",
+    "bundleId": "unknown.rm434209233mojiweather",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "rm434209233MojiWeather://",
+        "action": "打开墨迹天气",
+        "description": "墨迹天气 - 打开墨迹天气",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Amihexin",
+    "localizedName": "同花顺",
+    "slug": "amihexin",
+    "bundleId": "unknown.amihexin",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "amihexin://",
+        "action": "打开同花顺",
+        "description": "同花顺 - 打开同花顺",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Qqbizmaildistribute2",
+    "localizedName": "腾讯企业邮箱",
+    "slug": "qqbizmaildistribute2",
+    "bundleId": "unknown.qqbizmaildistribute2",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qqbizmailDistribute2://",
+        "action": "打开腾讯企业邮箱",
+        "description": "腾讯企业邮箱 - 打开腾讯企业邮箱",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Mqqsecure",
+    "localizedName": "腾讯手机管家",
+    "slug": "mqqsecure",
+    "bundleId": "unknown.mqqsecure",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mqqsecure://",
+        "action": "打开腾讯手机管家",
+        "description": "腾讯手机管家 - 打开腾讯手机管家",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Neteasemail",
+    "localizedName": "网易邮箱",
+    "slug": "neteasemail",
+    "bundleId": "unknown.neteasemail",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "neteasemail://",
+        "action": "打开网易邮箱",
+        "description": "网易邮箱 - 打开网易邮箱",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Baiduyun",
+    "localizedName": "百度云",
+    "slug": "baiduyun",
+    "bundleId": "unknown.baiduyun",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "baiduyun://",
+        "action": "打开百度云",
+        "description": "百度云 - 打开百度云",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Mihome",
+    "localizedName": "米家",
+    "slug": "mihome",
+    "bundleId": "unknown.mihome",
+    "category": "tools",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Tools"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mihome://",
+        "action": "打开米家",
+        "description": "米家 - 打开米家",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Wecom",
+    "localizedName": "企业微信",
+    "slug": "wecom",
+    "bundleId": "unknown.wecom",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "wxwork://",
+        "action": "打开企业微信",
+        "description": "企业微信 - 打开企业微信",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "ComBaiduTieba",
+    "localizedName": "百度贴吧",
+    "slug": "com-baidu-tieba",
+    "bundleId": "unknown.com-baidu-tieba",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "com.baidu.tieba://",
+        "action": "打开百度贴吧",
+        "description": "百度贴吧 - 打开百度贴吧",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Tencentweibo",
+    "localizedName": "腾讯微博",
+    "slug": "tencentweibo",
+    "bundleId": "unknown.tencentweibo",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "TencentWeibo://",
+        "action": "打开腾讯微博",
+        "description": "腾讯微博 - 打开腾讯微博",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Momochat",
+    "localizedName": "陌陌",
+    "slug": "momochat",
+    "bundleId": "unknown.momochat",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "momochat://",
+        "action": "打开陌陌",
+        "description": "陌陌 - 打开陌陌",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Tianya",
+    "localizedName": "天涯社区",
+    "slug": "tianya",
+    "bundleId": "unknown.tianya",
+    "category": "social",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Social"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "tianya://",
+        "action": "打开天涯社区",
+        "description": "天涯社区 - 打开天涯社区",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Yhd",
+    "localizedName": "1号店",
+    "slug": "yhd",
+    "bundleId": "unknown.yhd",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "yhd://",
+        "action": "打开1号店",
+        "description": "1号店 - 打开1号店",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Vipshop",
+    "localizedName": "唯品会",
+    "slug": "vipshop",
+    "bundleId": "unknown.vipshop",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "vipshop://",
+        "action": "打开唯品会",
+        "description": "唯品会 - 打开唯品会",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "BaiduMap",
+    "localizedName": "百度地图",
+    "slug": "baidu-map",
+    "bundleId": "unknown.baidu-map",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "baidumap://",
+        "action": "打开百度地图",
+        "description": "百度地图 - 打开百度地图",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "baidumap://map/direction?origin=我的位置&destination=公司&mode=driving",
+        "action": "导航",
+        "description": "百度地图 - 导航",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "TencentMap",
+    "localizedName": "腾讯地图",
+    "slug": "tencent-map",
+    "bundleId": "unknown.tencent-map",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qqmap://",
+        "action": "打开腾讯地图",
+        "description": "腾讯地图 - 打开腾讯地图",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "qqmap://map/routeplan?from=我的位置&type=drive&tocoord=36.547901,104.258354&to=dest&coord_type=1&policy=0",
+        "action": "导航",
+        "description": "腾讯地图 - 导航",
+        "capability": "navigation",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Zcblbjjj",
+    "localizedName": "北京交警",
+    "slug": "zcblbjjj",
+    "bundleId": "unknown.zcblbjjj",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "zcblbjjj://",
+        "action": "打开北京交警",
+        "description": "北京交警 - 打开北京交警",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Diditaxi",
+    "localizedName": "滴滴出行",
+    "slug": "diditaxi",
+    "bundleId": "unknown.diditaxi",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "diditaxi://",
+        "action": "打开滴滴出行",
+        "description": "滴滴出行 - 打开滴滴出行",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Trainassist",
+    "localizedName": "订票助手",
+    "slug": "trainassist",
+    "bundleId": "unknown.trainassist",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "trainassist://",
+        "action": "打开订票助手",
+        "description": "订票助手 - 打开订票助手",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Elongiphone",
+    "localizedName": "艺龙旅行",
+    "slug": "elongiphone",
+    "bundleId": "unknown.elongiphone",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "elongIPhone://",
+        "action": "艺龙旅行（旧）",
+        "description": "艺龙旅行 - 艺龙旅行（旧）",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "eltclient://",
+        "action": "艺龙旅行（新）",
+        "description": "艺龙旅行 - 艺龙旅行（新）",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Ctripwireless",
+    "localizedName": "携程无线",
+    "slug": "ctripwireless",
+    "bundleId": "unknown.ctripwireless",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "CtripWireless://",
+        "action": "打开携程无线",
+        "description": "携程无线 - 打开携程无线",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Taobaotravel",
+    "localizedName": "淘宝旅行",
+    "slug": "taobaotravel",
+    "bundleId": "unknown.taobaotravel",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "taobaotravel://",
+        "action": "打开淘宝旅行",
+        "description": "淘宝旅行 - 打开淘宝旅行",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Mobike",
+    "localizedName": "摩拜单车",
+    "slug": "mobike",
+    "bundleId": "unknown.mobike",
+    "category": "transport",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Transport"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "mobike://",
+        "action": "打开摩拜单车",
+        "description": "摩拜单车 - 打开摩拜单车",
+        "capability": "transport",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "mobike://scanqr",
+        "action": "扫码",
+        "description": "摩拜单车 - 扫码",
+        "capability": "scan",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Douyutv",
+    "localizedName": "斗鱼",
+    "slug": "douyutv",
+    "bundleId": "unknown.douyutv",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "douyutv://",
+        "action": "打开斗鱼",
+        "description": "斗鱼 - 打开斗鱼",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Pptv",
+    "localizedName": "PPTV",
+    "slug": "pptv",
+    "bundleId": "unknown.pptv",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "pptv://",
+        "action": "打开PPTV",
+        "description": "PPTV - 打开PPTV",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Youku",
+    "localizedName": "优酷",
+    "slug": "youku",
+    "bundleId": "unknown.youku",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "youku://",
+        "action": "打开优酷",
+        "description": "优酷 - 打开优酷",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Sohuvideo",
+    "localizedName": "搜狐视频",
+    "slug": "sohuvideo",
+    "bundleId": "unknown.sohuvideo",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "sohuvideo://",
+        "action": "打开搜狐视频",
+        "description": "搜狐视频 - 打开搜狐视频",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "TencentVideo",
+    "localizedName": "腾讯视频",
+    "slug": "tencent-video",
+    "bundleId": "unknown.tencent-video",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "tenvideo://",
+        "action": "打开腾讯视频",
+        "description": "腾讯视频 - 打开腾讯视频",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Ireader",
+    "localizedName": "掌阅iReader",
+    "slug": "ireader",
+    "bundleId": "unknown.ireader",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "iReader://",
+        "action": "打开掌阅iReader",
+        "description": "掌阅iReader - 打开掌阅iReader",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Qqnews",
+    "localizedName": "腾讯新闻",
+    "slug": "qqnews",
+    "bundleId": "unknown.qqnews",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "qqnews://",
+        "action": "打开腾讯新闻",
+        "description": "腾讯新闻 - 打开腾讯新闻",
+        "capability": "news",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Doubanradio",
+    "localizedName": "豆瓣FM",
+    "slug": "doubanradio",
+    "bundleId": "unknown.doubanradio",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "doubanradio://",
+        "action": "打开豆瓣FM",
+        "description": "豆瓣FM - 打开豆瓣FM",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Baidumusic",
+    "localizedName": "百度音乐",
+    "slug": "baidumusic",
+    "bundleId": "unknown.baidumusic",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "baidumusic://",
+        "action": "打开百度音乐",
+        "description": "百度音乐 - 打开百度音乐",
+        "capability": "music",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Baiduvideoiphone",
+    "localizedName": "百度视频",
+    "slug": "baiduvideoiphone",
+    "bundleId": "unknown.baiduvideoiphone",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "baiduvideoiphone://",
+        "action": "打开百度视频",
+        "description": "百度视频 - 打开百度视频",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Kuaikan",
+    "localizedName": "快看漫画",
+    "slug": "kuaikan",
+    "bundleId": "unknown.kuaikan",
+    "category": "media",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Media"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "kuaikan://",
+        "action": "打开快看漫画",
+        "description": "快看漫画 - 打开快看漫画",
+        "capability": "content-detail",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Cmb",
+    "localizedName": "招商银行",
+    "slug": "cmb",
+    "bundleId": "unknown.cmb",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Finance"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "cmbmobilebank://",
+        "action": "打开招商银行",
+        "description": "招商银行 - 打开招商银行",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Ccb",
+    "localizedName": "建设银行",
+    "slug": "ccb",
+    "bundleId": "unknown.ccb",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Finance"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "wx2654d9155d70a468://",
+        "action": "打开建设银行",
+        "description": "建设银行 - 打开建设银行",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Icbc",
+    "localizedName": "工商银行",
+    "slug": "icbc",
+    "bundleId": "unknown.icbc",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Finance"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "com.icbc.iphoneclient://",
+        "action": "打开工商银行",
+        "description": "工商银行 - 打开工商银行",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Spdb",
+    "localizedName": "浦发银行",
+    "slug": "spdb",
+    "bundleId": "unknown.spdb",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Finance"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "wx1cb534bb13ba3dbd://",
+        "action": "打开浦发银行",
+        "description": "浦发银行 - 打开浦发银行",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  },
+  {
+    "app": "Smarthome",
+    "localizedName": "360智慧生活",
+    "slug": "smarthome",
+    "bundleId": "unknown.smarthome",
+    "category": "finance",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Finance"
+    ],
+    "sourceIds": [
+      "gist-zhuziyi1989"
+    ],
+    "schemes": [
+      {
+        "url": "smarthome://",
+        "action": "打开360智慧生活",
+        "description": "360智慧生活 - 打开360智慧生活",
+        "capability": "finance",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      }
+    ]
+  }
+]

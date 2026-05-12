@@ -1,0 +1,58 @@
+[
+  {
+    "id": "system",
+    "name": "系统"
+  },
+  {
+    "id": "browser",
+    "name": "浏览器"
+  },
+  {
+    "id": "productivity",
+    "name": "效率"
+  },
+  {
+    "id": "social",
+    "name": "社交"
+  },
+  {
+    "id": "finance",
+    "name": "金融"
+  },
+  {
+    "id": "maps",
+    "name": "地图"
+  },
+  {
+    "id": "media",
+    "name": "影音"
+  },
+  {
+    "id": "music",
+    "name": "音乐"
+  },
+  {
+    "id": "news",
+    "name": "新闻"
+  },
+  {
+    "id": "shopping",
+    "name": "购物"
+  },
+  {
+    "id": "food",
+    "name": "餐饮"
+  },
+  {
+    "id": "transport",
+    "name": "出行"
+  },
+  {
+    "id": "local-services",
+    "name": "本地生活"
+  },
+  {
+    "id": "tools",
+    "name": "工具"
+  }
+]

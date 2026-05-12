@@ -1,0 +1,98 @@
+[
+  {
+    "id": "open-app",
+    "name": "打开 App"
+  },
+  {
+    "id": "scan",
+    "name": "扫一扫"
+  },
+  {
+    "id": "payment-code",
+    "name": "付款码"
+  },
+  {
+    "id": "qr-card",
+    "name": "二维码名片"
+  },
+  {
+    "id": "profile",
+    "name": "用户主页"
+  },
+  {
+    "id": "app-search",
+    "name": "应用内搜索"
+  },
+  {
+    "id": "open-url",
+    "name": "打开网页"
+  },
+  {
+    "id": "content-detail",
+    "name": "内容详情"
+  },
+  {
+    "id": "live",
+    "name": "直播"
+  },
+  {
+    "id": "game",
+    "name": "游戏"
+  },
+  {
+    "id": "news",
+    "name": "新闻"
+  },
+  {
+    "id": "question",
+    "name": "问题"
+  },
+  {
+    "id": "music",
+    "name": "音乐"
+  },
+  {
+    "id": "settings",
+    "name": "设置"
+  },
+  {
+    "id": "phone",
+    "name": "电话"
+  },
+  {
+    "id": "camera",
+    "name": "相机"
+  },
+  {
+    "id": "tool",
+    "name": "工具"
+  },
+  {
+    "id": "mini-app",
+    "name": "小程序"
+  },
+  {
+    "id": "service",
+    "name": "服务"
+  },
+  {
+    "id": "finance",
+    "name": "金融"
+  },
+  {
+    "id": "life-service",
+    "name": "生活服务"
+  },
+  {
+    "id": "fitness",
+    "name": "运动"
+  },
+  {
+    "id": "transport",
+    "name": "出行"
+  },
+  {
+    "id": "navigation",
+    "name": "导航"
+  }
+]

@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+
+const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
+const newSchemeBody = `请补充下面信息，提交后会自动生成一个待审核 PR。\n\nApp 名称：\nBundle ID：\nURL Scheme：\n用途：\n分类：\n验证状态：unknown\n来源/测试说明：\n\n<!-- scheme-submission\n{\n  "type": "scheme-submission",\n  "app": "",\n  "bundleId": "",\n  "url": "",\n  "action": "",\n  "category": "",\n  "status": "unknown",\n  "source": ""\n}\n-->`;
+const newSchemeUrl = `${repositoryUrl}/issues/new?title=${encodeURIComponent('Add scheme: ')}&labels=${encodeURIComponent(
+  'scheme,new-scheme',
+)}&body=${encodeURIComponent(newSchemeBody)}`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="awesome-ios-url-schemes 使用教程。" />
+    <title>使用教程 - awesome-ios-url-schemes</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="awesome-ios-url-schemes">
+        <span class="brand-mark">⌘</span>
+        <span>awesome-ios-url-schemes</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../guide/">教程</a>
+        <a href="../#schemes">索引</a>
+        <a href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+        <a href={repositoryUrl} rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="guide-hero" aria-labelledby="guide-title">
+        <p class="eyebrow">Guide</p>
+        <h1 id="guide-title">怎么用</h1>
+        <p class="lede">查找、复制、验证、反馈，尽量控制在一次点击内完成。</p>
+      </section>
+
+      <section class="guide-page" aria-label="使用步骤">
+        <article class="guide-step">
+          <span class="step-index">1</span>
+          <div>
+            <h2>查找 Scheme</h2>
+            <p>在首页搜索 App、URL Scheme、Bundle ID 或用途。也可以切换到按 App、按能力、全部列表三种视图。</p>
+          </div>
+        </article>
+
+        <article class="guide-step">
+          <span class="step-index">2</span>
+          <div>
+            <h2>复制并测试</h2>
+            <p>点每条记录右侧的复制按钮，把 URL Scheme 粘到 iPhone 的 Safari、快捷指令或你的调试入口里打开。</p>
+          </div>
+        </article>
+
+        <article class="guide-step">
+          <span class="step-index">3</span>
+          <div>
+            <h2>反馈可用或失效</h2>
+            <p>验证后点对勾表示可用，点叉表示失效。页面会打开预填好的 GitHub Issue，并自动带上对应 scheme。</p>
+          </div>
+        </article>
+
+        <article class="guide-step">
+          <span class="step-index">4</span>
+          <div>
+            <h2>提交新的 Scheme</h2>
+            <p>点提交 Scheme，填写 App、URL Scheme 和用途。Issue 创建后会自动生成待审核 PR。</p>
+            <a class="primary-action inline-action" href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="review-flow" aria-labelledby="review-title">
+        <p class="eyebrow">Review</p>
+        <h2 id="review-title">审核流程</h2>
+        <div class="flow-row">
+          <span>用户提交 Issue</span>
+          <span>自动生成 PR</span>
+          <span>维护者审核合并</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
