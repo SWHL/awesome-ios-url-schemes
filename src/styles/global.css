@@ -504,6 +504,58 @@ h3 {
   text-align: center;
 }
 
+.source-list {
+  display: grid;
+  gap: 12px;
+}
+
+.source-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.source-card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.source-card code {
+  font-size: 13px;
+}
+
+.source-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.source-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 8px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  background: var(--surface-muted);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.source-action {
+  min-width: 92px;
+}
+
 .view-switcher {
   display: inline-flex;
   gap: 4px;
@@ -1134,6 +1186,15 @@ code {
   .guide-page,
   .flow-row {
     grid-template-columns: 1fr;
+  }
+
+  .source-card {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .source-action {
+    width: 100%;
   }
 
   .guide-step {

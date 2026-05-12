@@ -1,8 +1,21 @@
 ---
 import '../styles/global.css';
+import sources from '../data/sources.json';
 
 const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
 const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
+const typeNames: Record<string, string> = {
+  article: '文章',
+  gist: 'Gist',
+  repository: '仓库',
+  directory: '目录',
+  issue: 'Issue',
+  'curated-list': '项目整理',
+};
+const statusNames: Record<string, string> = {
+  seed: '种子来源',
+  community: '社区反馈',
+};
 ---
 
 <!doctype html>
@@ -10,8 +23,8 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="awesome-ios-url-schemes 使用教程。" />
-    <title>使用教程 - awesome-ios-url-schemes</title>
+    <meta name="description" content="awesome-ios-url-schemes 参考链接与信息来源。" />
+    <title>参考链接 - awesome-ios-url-schemes</title>
     <script is:inline>
       const storedTheme = localStorage.getItem('theme-preference') || 'system';
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -43,54 +56,27 @@ const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
     </header>
 
     <main>
-      <section class="guide-hero" aria-labelledby="guide-title">
-        <h1 id="guide-title">怎么用</h1>
-        <p class="lede">查找、复制、验证、反馈，尽量控制在一次点击内完成。</p>
+      <section class="guide-hero" aria-labelledby="sources-title">
+        <h1 id="sources-title">参考链接</h1>
+        <p class="lede">这个索引的数据来源、社区反馈入口和后续补充参考会集中列在这里。</p>
       </section>
 
-      <section class="guide-page" aria-label="使用步骤">
-        <article class="guide-step">
-          <span class="step-index">1</span>
-          <div>
-            <h2>查找 Scheme</h2>
-            <p>在首页搜索 App、URL Scheme、Bundle ID 或用途。也可以切换到按 App、按能力、全部列表三种视图。</p>
-          </div>
-        </article>
-
-        <article class="guide-step">
-          <span class="step-index">2</span>
-          <div>
-            <h2>复制并测试</h2>
-            <p>点每条记录右侧的复制按钮，把 URL Scheme 粘到 iPhone 的 Safari、快捷指令或你的调试入口里打开。</p>
-          </div>
-        </article>
-
-        <article class="guide-step">
-          <span class="step-index">3</span>
-          <div>
-            <h2>反馈可用或失效</h2>
-            <p>验证后点对勾表示可用，点叉表示失效。页面会打开预填好的 GitHub Issue，并自动带上对应 scheme。</p>
-          </div>
-        </article>
-
-        <article class="guide-step">
-          <span class="step-index">4</span>
-          <div>
-            <h2>提交新的 Scheme</h2>
-            <p>点提交 Scheme，填写 App、URL Scheme 和用途。Issue 创建后会自动生成待审核 PR。</p>
-            <a class="primary-action inline-action" href={newSchemeUrl} rel="noreferrer">提交 Scheme</a>
-          </div>
-        </article>
-      </section>
-
-      <section class="review-flow" aria-labelledby="review-title">
-        <p class="eyebrow">Review</p>
-        <h2 id="review-title">审核流程</h2>
-        <div class="flow-row">
-          <span>用户提交 Issue</span>
-          <span>自动生成 PR</span>
-          <span>维护者审核合并</span>
-        </div>
+      <section class="source-list" aria-label="参考链接列表">
+        {
+          sources.map((source) => (
+            <article class="source-card">
+              <div>
+                <p class="source-meta">
+                  <span>{typeNames[source.type] || source.type}</span>
+                  <span>{statusNames[source.status] || source.status}</span>
+                </p>
+                <h2>{source.title}</h2>
+                <code>{source.id}</code>
+              </div>
+              <a class="primary-action source-action" href={source.url} rel="noreferrer">打开链接</a>
+            </article>
+          ))
+        }
       </section>
     </main>
     <a class="back-top" href="#top" aria-label="返回顶部" title="返回顶部">↑</a>

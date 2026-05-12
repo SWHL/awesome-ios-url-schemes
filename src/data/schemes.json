@@ -2342,7 +2342,8 @@
     ],
     "sourceIds": [
       "curated-chat-2026-05-12",
-      "gist-zhuziyi1989"
+      "gist-zhuziyi1989",
+      "csdn-gy5338"
     ],
     "schemes": [
       {
@@ -2410,6 +2411,22 @@
         "iosVersion": null,
         "appVersion": null,
         "notes": "Imported from zhuziyi1989 iOS URL Schemes Gist. The source notes some entries may be outdated."
+      },
+      {
+        "url": "tbopen://",
+        "action": "打开淘宝",
+        "description": "淘宝 - 打开淘宝",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from CSDN iOS URL Scheme article by GY5338. Availability is unverified."
       }
     ]
   },
@@ -7996,6 +8013,78 @@
         "iosVersion": null,
         "appVersion": null,
         "notes": "User reported this scheme as usable."
+      }
+    ]
+  },
+  {
+    "app": "Suning",
+    "localizedName": "苏宁易购",
+    "slug": "suning",
+    "bundleId": "SuningEMall",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "csdn-gy5338"
+    ],
+    "schemes": [
+      {
+        "url": "suning://",
+        "action": "打开苏宁易购",
+        "description": "苏宁易购 - 打开苏宁易购",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from CSDN iOS URL Scheme article by GY5338. Availability is unverified."
+      }
+    ]
+  },
+  {
+    "app": "Kaola",
+    "localizedName": "考拉",
+    "slug": "kaola",
+    "bundleId": "unknown.kaola",
+    "category": "shopping",
+    "platforms": [
+      "iPhone",
+      "iPad"
+    ],
+    "tags": [
+      "Shopping",
+      "Ecommerce"
+    ],
+    "sourceIds": [
+      "csdn-gy5338"
+    ],
+    "schemes": [
+      {
+        "url": "kaola://",
+        "action": "打开考拉",
+        "description": "考拉 - 打开考拉",
+        "capability": "open-app",
+        "regions": [
+          "CN"
+        ],
+        "params": [],
+        "type": "scheme",
+        "status": "unknown",
+        "lastVerified": null,
+        "iosVersion": null,
+        "appVersion": null,
+        "notes": "Imported from CSDN iOS URL Scheme article by GY5338. Availability is unverified."
       }
     ]
   }
