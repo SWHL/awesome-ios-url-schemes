@@ -1,0 +1,70 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  markdownPath?: string;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const siteUrl = 'https://swhl.github.io/awesome-ios-url-schemes';
+const {
+  title,
+  description,
+  path = '/',
+  markdownPath,
+  type = 'website',
+  jsonLd,
+} = Astro.props;
+const absoluteUrl = (value: string) => new URL(value.replace(/^\//, ''), `${siteUrl}/`).toString();
+const canonicalUrl = absoluteUrl(path);
+const markdownUrl = markdownPath ? absoluteUrl(markdownPath) : '';
+const imageUrl = new URL('/awesome-ios-url-schemes/og.svg', 'https://swhl.github.io').toString();
+const siteName = 'Awesome iOS URL Schemes';
+const keywords = [
+  'iOS URL Scheme',
+  'URL Scheme',
+  'iOS Scheme',
+  'Bundle ID 查询',
+  'App Store Bundle ID',
+  'Deep Link',
+  'Universal Link',
+].join(', ');
+const structuredData = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)" />
+<link rel="canonical" href={canonicalUrl} />
+{markdownUrl && <link rel="alternate" type="text/markdown" href={markdownUrl} />}
+<link rel="icon" href="/awesome-ios-url-schemes/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="/awesome-ios-url-schemes/site.webmanifest" />
+<title>{title}</title>
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{
+  structuredData && (
+    <script is:inline type="application/ld+json" set:html={structuredData} />
+  )
+}
+<script is:inline>
+  const storedTheme = localStorage.getItem('theme-preference') || 'system';
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
+  document.documentElement.dataset.themePreference = storedTheme;
+</script>

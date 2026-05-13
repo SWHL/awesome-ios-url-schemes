@@ -1,0 +1,17 @@
+{
+  "name": "Awesome iOS URL Schemes",
+  "short_name": "iOS Schemes",
+  "description": "可搜索的 iOS URL Scheme 索引与 Bundle ID 查询工具。",
+  "start_url": "/awesome-ios-url-schemes/",
+  "scope": "/awesome-ios-url-schemes/",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#1f2937",
+  "icons": [
+    {
+      "src": "/awesome-ios-url-schemes/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

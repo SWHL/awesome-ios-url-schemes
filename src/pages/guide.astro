@@ -1,23 +1,46 @@
 ---
 import '../styles/global.css';
+import SeoHead from '../components/SeoHead.astro';
 
 const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
 const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
+const pageTitle = '使用教程 - iOS URL Scheme 查询、复制与反馈指南';
+const pageDescription = '了解如何在 Awesome iOS URL Schemes 中搜索 App Scheme、复制测试、反馈可用性，并通过 GitHub Issue 提交新的 iOS URL Scheme。';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: '如何使用 Awesome iOS URL Schemes',
+  description: pageDescription,
+  inLanguage: 'zh-CN',
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: '查找 Scheme',
+      text: '在首页搜索 App、URL Scheme、Bundle ID 或用途，并使用视图与筛选器缩小范围。',
+    },
+    {
+      '@type': 'HowToStep',
+      name: '复制并测试',
+      text: '复制 URL Scheme，在 iPhone 的 Safari、快捷指令或调试入口中打开测试。',
+    },
+    {
+      '@type': 'HowToStep',
+      name: '反馈可用或失效',
+      text: '使用页面中的反馈按钮创建预填好的 GitHub Issue。',
+    },
+    {
+      '@type': 'HowToStep',
+      name: '提交新的 Scheme',
+      text: '填写 App、URL Scheme、用途、验证状态和证据类型，提交后自动生成待审核 PR。',
+    },
+  ],
+};
 ---
 
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="awesome-ios-url-schemes 使用教程。" />
-    <title>使用教程 - awesome-ios-url-schemes</title>
-    <script is:inline>
-      const storedTheme = localStorage.getItem('theme-preference') || 'system';
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
-      document.documentElement.dataset.themePreference = storedTheme;
-    </script>
+    <SeoHead title={pageTitle} description={pageDescription} path="/guide/" markdownPath="/guide.md" jsonLd={jsonLd} />
   </head>
   <body id="top">
     <header class="site-header">

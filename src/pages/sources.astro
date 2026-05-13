@@ -1,9 +1,24 @@
 ---
 import '../styles/global.css';
+import SeoHead from '../components/SeoHead.astro';
 import sources from '../data/sources.json';
 
 const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
 const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
+const pageTitle = '参考来源 - iOS URL Scheme 数据来源与资料链接';
+const pageDescription = '查看 Awesome iOS URL Schemes 的数据来源、参考仓库、文章、社区反馈入口和后续补充资料。';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description: pageDescription,
+  inLanguage: 'zh-CN',
+  hasPart: sources.map((source) => ({
+    '@type': 'CreativeWork',
+    name: source.title,
+    url: source.url,
+  })),
+};
 const typeNames: Record<string, string> = {
   article: '文章',
   gist: 'Gist',
@@ -21,16 +36,7 @@ const statusNames: Record<string, string> = {
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="awesome-ios-url-schemes 参考链接与信息来源。" />
-    <title>参考链接 - awesome-ios-url-schemes</title>
-    <script is:inline>
-      const storedTheme = localStorage.getItem('theme-preference') || 'system';
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
-      document.documentElement.dataset.themePreference = storedTheme;
-    </script>
+    <SeoHead title={pageTitle} description={pageDescription} path="/sources/" markdownPath="/sources.md" jsonLd={jsonLd} />
   </head>
   <body id="top">
     <header class="site-header">

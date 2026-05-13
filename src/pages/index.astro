@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SeoHead from '../components/SeoHead.astro';
 import schemes from '../data/schemes.json';
 import categories from '../data/categories.json';
 import capabilities from '../data/capabilities.json';
@@ -7,6 +8,9 @@ import capabilities from '../data/capabilities.json';
 const totalApps = schemes.length;
 const totalSchemes = schemes.reduce((count, app) => count + app.schemes.length, 0);
 const repositoryUrl = 'https://github.com/SWHL/awesome-ios-url-schemes';
+const siteUrl = 'https://swhl.github.io/awesome-ios-url-schemes/';
+const pageTitle = 'iOS URL Scheme 索引与 Bundle ID 查询 - Awesome iOS URL Schemes';
+const pageDescription = `收录 ${totalApps} 个 App、${totalSchemes} 条 iOS URL Scheme，支持搜索、筛选、复制、反馈可用性，并提供 App Store Bundle ID 查询工具。`;
 const evidenceNames: Record<string, string> = {
   source: '资料来源',
   info_plist: 'Info.plist',
@@ -14,24 +18,42 @@ const evidenceNames: Record<string, string> = {
   manual: '人工提交',
 };
 const newSchemeUrl = `${repositoryUrl}/issues/new?template=new-scheme.yml`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Awesome iOS URL Schemes',
+    url: siteUrl,
+    inLanguage: 'zh-CN',
+    description: pageDescription,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteUrl}#schemes`,
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Awesome iOS URL Schemes',
+    url: siteUrl,
+    description: pageDescription,
+    keywords: ['iOS URL Scheme', 'Bundle ID', 'Deep Link', 'Universal Link'],
+    license: 'https://github.com/SWHL/awesome-ios-url-schemes/blob/main/LICENSE',
+    creator: {
+      '@type': 'Organization',
+      name: 'SWHL',
+      url: 'https://github.com/SWHL',
+    },
+    variableMeasured: ['URL Scheme', 'Bundle ID', 'App', 'Verification status', 'Evidence type'],
+  },
+];
 ---
 
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="一个可搜索、可复制、可测试打开的 iOS URL Scheme 静态索引。"
-    />
-    <title>awesome-ios-url-schemes</title>
-    <script is:inline>
-      const storedTheme = localStorage.getItem('theme-preference') || 'system';
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.dataset.theme = storedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : storedTheme;
-      document.documentElement.dataset.themePreference = storedTheme;
-    </script>
+    <SeoHead title={pageTitle} description={pageDescription} path="/" markdownPath="/index.md" jsonLd={jsonLd} />
   </head>
   <body id="top">
     <header class="site-header">
