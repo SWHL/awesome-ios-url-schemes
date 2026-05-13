@@ -589,7 +589,7 @@ h3 {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) 150px 150px 150px;
+  grid-template-columns: minmax(220px, 1fr) 140px 140px 140px 140px;
   gap: 12px;
   margin-bottom: 18px;
 }
@@ -883,6 +883,15 @@ h3 {
   border: 1px solid var(--border-soft);
   background: var(--surface-muted);
   color: var(--text);
+}
+
+.evidence-chip {
+  color: var(--muted);
+}
+
+.evidence-can_open_url,
+.evidence-info_plist {
+  color: var(--success);
 }
 
 .meta-region {

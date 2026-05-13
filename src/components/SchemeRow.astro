@@ -13,10 +13,12 @@ interface Props {
       url: string;
       action: string;
       capability: string;
+      evidence: string;
       status: string;
       type: string;
     };
     capabilityName: string;
+    evidenceName: string;
     statusName: string;
     regions: string[];
     params: string[];
@@ -27,7 +29,7 @@ interface Props {
 }
 
 const { entry, showApp = false, repositoryUrl } = Astro.props;
-const { app, appName, scheme, capabilityName, statusName, regions, params, searchText } = entry;
+const { app, appName, scheme, capabilityName, evidenceName, statusName, regions, params, searchText } = entry;
 const feedbackBase = `${repositoryUrl}/issues/new`;
 const worksPayload = {
   type: 'scheme-feedback',
@@ -60,6 +62,7 @@ const brokenUrl = `${feedbackBase}?title=${encodeURIComponent(`Broken scheme: ${
   data-category={app.category}
   data-capability={scheme.capability}
   data-status={scheme.status}
+  data-evidence={scheme.evidence}
   data-url={scheme.url}
   data-regions={regions.join(' ')}
   data-params={params.join(' ')}
@@ -80,6 +83,7 @@ const brokenUrl = `${feedbackBase}?title=${encodeURIComponent(`Broken scheme: ${
   <td>
     <div class="meta-grid">
       <span class={`status-chip status-${scheme.status}`}>{statusName}</span>
+      <span class={`meta-chip evidence-chip evidence-${scheme.evidence}`}>{evidenceName}</span>
       <span class="meta-chip">{capabilityName}</span>
       <span class="meta-chip meta-region" aria-label={`地区：${regions.join(' / ')}`}>{regions.join(' / ')}</span>
       {params.length > 0 && <span class="meta-chip meta-params" aria-label={`参数：${params.join(', ')}`}>{params.map((param) => `{${param}}`).join(' ')}</span>}
